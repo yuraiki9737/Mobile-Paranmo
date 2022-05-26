@@ -69,13 +69,9 @@
             android:theme="@style/Theme.Paranmo"/>
         <activity
             android:name=".ui.home.notif.NotifikasiActivity"
-            android:exported="true"
+            android:exported="false"
             android:theme="@style/Theme.Paranmo">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".ui.home.favorit.FavoritActivity"
@@ -101,10 +97,12 @@
         </activity>
         <activity
             android:name=".ui.onboarding.OnBoardingActivity"
-           android:exported="false"
+           android:exported="true"
             android:theme="@style/Theme.SplashScreen" >
-
-
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
         <provider
