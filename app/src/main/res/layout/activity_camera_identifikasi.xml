@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.identifikasitanaman.cameraidentifikasi.CameraIdentifikasiActivity">
+
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/viewFinderCameraIdentifikasi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <View
+        android:id="@+id/captureImageIdentification"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="176dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/ic_vector"
+        android:contentDescription="@string/todo"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <View
+        android:id="@+id/back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/ic_vector1"
+        android:contentDescription="@string/todo"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/captureImageIdentification"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

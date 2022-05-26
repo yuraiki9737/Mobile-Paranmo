@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_10"
+    tools:context=".ui.home.search.SearchActivity">
+
+
+  <FrameLayout
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+      <ImageView
+          android:id="@+id/back_search"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="15dp"
+          android:layout_marginTop="25dp"
+          android:layout_marginBottom="25dp"
+          android:contentDescription="@string/todo"
+          android:paddingStart="0dp"
+          android:paddingTop="0dp"
+          android:paddingBottom="0dp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:srcCompat="@drawable/ic_round_arrow_back_ios_24"
+          tools:ignore="RtlSymmetry" />
+
+      <com.navigation.latihan.paranmo.ui.customview.CustomViewSearch
+          android:id="@+id/identification_bar"
+          style="@style/text"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_gravity="start"
+          android:layout_marginStart="15dp"
+          android:layout_marginTop="25dp"
+          android:layout_marginEnd="15dp"
+          android:layout_marginBottom="25dp"
+          android:hint="@string/search_tanaman_herbal"
+          android:minHeight="55dp"
+          android:paddingStart="16sp"
+          android:paddingEnd="16sp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="1.0"
+          app:layout_constraintStart_toEndOf="@+id/back_search"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.0"
+          tools:ignore="MissingConstraints" />
+
+      <Button
+          android:id="@+id/button"
+          android:layout_width="50dp"
+          android:layout_height="0dp"
+          android:background="@drawable/border"
+          android:drawableEnd="@drawable/ic_round_search_24_white"
+          android:paddingEnd="10dp"
+          app:layout_constraintBottom_toBottomOf="@+id/identification_bar"
+          app:layout_constraintEnd_toEndOf="@+id/identification_bar"
+          app:layout_constraintTop_toTopOf="@+id/identification_bar"
+          tools:ignore="RtlSymmetry" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

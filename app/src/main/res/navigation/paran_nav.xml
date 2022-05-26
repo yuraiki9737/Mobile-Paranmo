@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/paran_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.navigation.latihan.paranmo.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/paranShopFragment"
+        android:name="com.navigation.latihan.paranmo.ui.paranshop.ParanShopFragment"
+        android:label="fragment_paran_shop"
+        tools:layout="@layout/fragment_paran_shop" />
+    <fragment
+        android:id="@+id/paranNityFragment"
+        android:name="com.navigation.latihan.paranmo.ui.parannity.ParanNityFragment"
+        android:label="fragment_paran_nity"
+        tools:layout="@layout/fragment_paran_nity" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.navigation.latihan.paranmo.ui.profil.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>

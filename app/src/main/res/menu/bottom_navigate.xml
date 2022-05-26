@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+
+        android:id="@+id/homeFragment"
+        android:title="@string/home"
+        android:icon="@drawable/ic_round_home_24"/>
+
+    <item
+        android:id="@+id/paranShopFragment"
+        android:title="@string/paranmo_shop"
+        android:icon="@drawable/ic_round_shopping_bag_24"/>
+
+    <item
+        android:id="@+id/placeholder"
+        android:title=""/>
+
+    <item
+        android:id="@+id/paranNityFragment"
+        android:title="@string/paranmo_nity"
+        android:icon="@drawable/ic_round_supervised_user_circle_24"/>
+
+
+    <item
+        android:id="@+id/profileFragment"
+        android:title="@string/profile"
+        android:icon="@drawable/ic_round_person_24"/>
+
+</menu>
