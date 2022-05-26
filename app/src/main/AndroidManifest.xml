@@ -91,18 +91,19 @@
             android:theme="@style/Theme.SplashScreen" />
         <activity
             android:name=".ui.akun.login.LoginActivity"
-            android:exported="false"
-            android:theme="@style/Theme.SplashScreen" >
-
-        </activity>
-        <activity
-            android:name=".ui.onboarding.OnBoardingActivity"
-           android:exported="true"
+            android:exported="true"
             android:theme="@style/Theme.SplashScreen" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".ui.onboarding.OnBoardingActivity"
+           android:exported="false"
+            android:theme="@style/Theme.SplashScreen" >
+
         </activity>
 
         <provider
