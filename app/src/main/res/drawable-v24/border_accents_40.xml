@@ -6,6 +6,7 @@
         android:color="#ADE7D1"
         android:width="2dp"/>
 
-    <solid android:color="@color/white"/>
+    <solid
+        android:color="@color/white"/>
 
 </shape>
