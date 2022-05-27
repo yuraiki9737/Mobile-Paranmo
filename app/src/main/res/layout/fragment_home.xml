@@ -54,7 +54,7 @@
             android:layout_marginTop="68dp"
             android:layout_marginEnd="20dp"
             android:contentDescription="@string/todo"
-            android:src="@drawable/ic_round_favorite_24_home"
+            android:src="@drawable/ic_round_favorite_24_green"
             app:layout_constraintEnd_toStartOf="@+id/btn_notification"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="MissingConstraints" />
