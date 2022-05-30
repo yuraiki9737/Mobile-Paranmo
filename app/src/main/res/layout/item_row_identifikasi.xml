@@ -50,45 +50,24 @@
             tools:ignore="RtlHardcoded"
             tools:text="@string/plant" />
 
-        <TextView
-            android:id="@+id/latin"
-            style="@style/text_latin"
-            android:layout_width="wrap_content"
-            android:layout_height="23dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginBottom="24dp"
-            android:ellipsize="end"
-            android:gravity="center"
-            card_view:layout_constraintBottom_toBottomOf="parent"
-            card_view:layout_constraintEnd_toEndOf="parent"
-            card_view:layout_constraintStart_toStartOf="parent"
-            card_view:layout_constraintTop_toBottomOf="@+id/plant"
-            tools:ignore="RtlHardcoded"
-            tools:text="@string/latin" />
+<!--        <TextView-->
+<!--            android:id="@+id/latin"-->
+<!--            style="@style/text_latin"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="23dp"-->
+<!--            android:layout_marginStart="30dp"-->
+<!--            android:layout_marginTop="12dp"-->
+<!--            android:layout_marginEnd="30dp"-->
+<!--            android:layout_marginBottom="24dp"-->
+<!--            android:ellipsize="end"-->
+<!--            android:gravity="center"-->
+<!--            card_view:layout_constraintBottom_toBottomOf="parent"-->
+<!--            card_view:layout_constraintEnd_toEndOf="parent"-->
+<!--            card_view:layout_constraintStart_toStartOf="parent"-->
+<!--            card_view:layout_constraintTop_toBottomOf="@+id/plant"-->
+<!--            tools:ignore="RtlHardcoded"-->
+<!--            tools:text="@string/latin" />-->
 
-        <View
-            android:id="@+id/view6"
-            android:layout_width="70dp"
-            android:layout_height="37dp"
-            android:background="@drawable/vector"
-            card_view:layout_constraintEnd_toEndOf="parent"
-            card_view:layout_constraintHorizontal_bias="1.0"
-            card_view:layout_constraintStart_toStartOf="parent"
-            card_view:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/identification"
-            style="@style/text_identification"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            card_view:layout_constraintEnd_toEndOf="@+id/view6"
-            card_view:layout_constraintHorizontal_bias="0.65"
-            card_view:layout_constraintStart_toStartOf="@+id/view6"
-            card_view:layout_constraintTop_toTopOf="@+id/view6"
-            tools:ignore="MissingConstraints"
-            tools:text="@string/identification" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

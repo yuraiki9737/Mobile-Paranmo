@@ -7,7 +7,7 @@ android {
     compileSdk 32
 
     defaultConfig {
-        buildConfigField "String", "API_PARANMO", '""'
+        buildConfigField "String", "API_PARANMO", '"https://story-api.dicoding.dev/v1/"'
         applicationId "com.navigation.latihan.paranmo"
         minSdk 21
         targetSdk 32
@@ -74,5 +74,7 @@ dependencies {
 
     //data store
     implementation "androidx.datastore:datastore-preferences:1.0.0"
+
+    //tensorflow dependency
 
 }

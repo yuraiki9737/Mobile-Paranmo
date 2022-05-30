@@ -33,7 +33,7 @@
     <string name="result_bar">Result</string>
     <string name="result_identification_bar">Result Identifikasi</string>
     <string name="information_application">Informasi Aplikasi</string>
-    <string name="description_application">Bangkit tahun ini kembali menyelenggarakan Capstone Project 2022, dimana mahasiswa akan membuat project aplikasi yang menggabungkan 3 teknologi(cloud computing, machine learning, mobile development) berdasarkan case industri dan beberapa tema seperti economic and social resilience, healthcare, mobile and smart city, dan character building.\n\n Mengusung tema Healthcare, kami dari tim B22-PS020 membuat aplikasi Paranmo(Paparan tanaman obat) sebagai solusi dari masih kurangnya pengetahuan masyarakat mengenai penggunaan tanaman herbal sebagai obat. Berbekal dari ilmu dan bimbingan dari Bangkit dan mentor, aplikasi ini dirancang untuk dapat melakukan scanning terhadap daun tanaman herbal untuk mengetahui manfaat dan cara penggunaannya dalam mengobati suatu penyakit.\n\n Aplikasi yang dirancang oleh Alfi Nazilah(STIMIK Tunas Bangsa Banjarnegara), Alsy Taqiya Herasafitri(Universitas Brawijaya), Angel Citra Ornella(Universitas Udayana), Givar Elva Rizky Hana\'an(Universitas Potensi Utama), Muhammad Rohfi(Universitas Yarsi), dan Vita Nurhayati(Universitas Jember) ini mengajak penggunanya untuk tidak hanya dapat mengetahui cara penggunaan tanaman tanaman herbal, tetapi juga untuk ikut berkontribusi dengan membagikan pengetahuannya tentang tanaman herbal melalui aplikasi.\n\n</string>
+    <string name="description_application">Bangkit tahun ini kembali menyelenggarakan Capstone Project 2022, dimana mahasiswa akan membuat project aplikasi yang menggabungkan 3 teknologi(cloud computing, machine learning, mobile development) berdasarkan case industri dan beberapa tema seperti economic and social resilience, healthcare, mobile and smart city, dan character building.\n\n Mengusung tema Healthcare, kami dari tim B22-PS020 membuat aplikasi Paranmo(Paparan tanaman obat) sebagai solusi dari masih kurangnya pengetahuan masyarakat mengenai penggunaan tanaman herbal sebagai obat. Berbekal dari ilmu dan bimbingan dari Bangkit dan mentor, aplikasi ini dirancang untuk dapat melakukan scanning terhadap daun tanaman herbal untuk mengetahui manfaat dan cara penggunaannya dalam mengobati suatu penyakit.\n\n Aplikasi yang dirancang oleh Alfi Nazilah(STIMIK Tunas Bangsa Banjarnegara), Alsy Taqiya Herasafitri(Universitas Brawijaya), Angel Citra Ornella(Universitas Udayana), Givar Elva Rizky Hana\'an(Universitas Potensi Utama), Muhammad Rohfi(Universitas Yarsi), dan Vita Nurhayati(Universitas Jember) ini mengajak penggunanya untuk tidak hanya dapat mengetahui cara penggunaan tanaman - tanaman herbal, tetapi juga untuk ikut berkontribusi dengan membagikan pengetahuannya tentang tanaman herbal melalui aplikasi.\n\n</string>
     <string name="post_bar">Posting</string>
     <string name="failed_camera">Gagal memuat camera</string>
     <string name="camera"><u>Kamera</u></string>
@@ -83,6 +83,10 @@
     <string name="notif_deskripsi_paranmo_scan">Sedang melihat suatu tanaman obat namun bingung kegunaannya apa? Yuk coba Paranmo-scan!</string>
     <string name="date">date</string>
     <string name="name_person">Nama</string>
+    <string name="createdAccount">Akun anda berhasil dibuat</string>
+    <string name="invalidAccount">Akun tidak berhasil dibuat</string>
+    <string name="sukses">Login Sukses!</string>
+    <string name="failed">Username dan password tidak sesuai</string>
 
 
 </resources>

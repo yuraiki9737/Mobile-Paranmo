@@ -1,9 +1,20 @@
 package com.navigation.latihan.paranmo.ui.akun.register
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.view.View
+import android.widget.Toast
 import com.navigation.latihan.paranmo.R
+import com.navigation.latihan.paranmo.api.RetrofitClient
+import com.navigation.latihan.paranmo.data.RegisterUser
+import com.navigation.latihan.paranmo.data.ResponseRegister
 import com.navigation.latihan.paranmo.databinding.ActivityPendaftaranAkunBinding
+import com.navigation.latihan.paranmo.ui.akun.login.LoginActivity
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 class PendaftaranAkunActivity : AppCompatActivity() {
 
@@ -38,7 +49,7 @@ class PendaftaranAkunActivity : AppCompatActivity() {
                 }
                 else ->{
 
-                    //registrationAccountParanmo()
+                    registrationAccountParanmo()
 
 
                 }
@@ -47,5 +58,45 @@ class PendaftaranAkunActivity : AppCompatActivity() {
 
         }
 
+    }
+
+    private fun registrationAccountParanmo() {
+        val nameAccountParanmo = binding.name.text.toString().trim()
+        val emailAccountParanmo = binding.email.text.toString().trim()
+        val passwordAccountParanmo = binding.password.text.toString().trim()
+
+        binding.progressRegister.visibility = View.VISIBLE
+        RetrofitClient().getApiParanmo().registerAkunParanmo(RegisterUser(
+            nameAccountParanmo,
+            emailAccountParanmo,
+            passwordAccountParanmo))
+            .enqueue(object: Callback<ResponseRegister>{
+
+            override fun onFailure(call: Call<ResponseRegister>, t: Throwable){
+                binding.progressRegister.visibility = View.INVISIBLE
+                Log.d("failure: ", t.message.toString())
+            }
+            override fun onResponse(
+                call: Call<ResponseRegister>,
+                response: Response<ResponseRegister>,
+            ) {
+                if (response.isSuccessful) {
+                    binding.progressRegister.visibility = View.VISIBLE
+                    Toast.makeText(applicationContext,
+                        getString(R.string.createdAccount),
+                        Toast.LENGTH_LONG).show()
+                    val registrationIntentAccount = Intent(this@PendaftaranAkunActivity, LoginActivity::class.java)
+                    startActivity(registrationIntentAccount)
+                    finish()
+            } else{
+                    binding.progressRegister.visibility = View.INVISIBLE
+                    Toast.makeText(applicationContext,
+                        getString(R.string.invalidAccount),
+                        Toast.LENGTH_SHORT).show()
+                }
+            }
+
+
+        })
     }
 }
