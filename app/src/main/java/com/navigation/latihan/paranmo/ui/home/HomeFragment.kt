@@ -24,6 +24,7 @@ import com.navigation.latihan.paranmo.ui.home.notif.NotifikasiActivity
 import com.navigation.latihan.paranmo.ui.home.result.ResultActivity
 import com.navigation.latihan.paranmo.ui.home.search.SearchActivity
 import com.navigation.latihan.paranmo.ui.identifikasitanaman.cameraidentifikasi.CameraIdentifikasiActivity
+import com.navigation.latihan.paranmo.ui.identifikasitanaman.resultidentifikasi.ResultIdentifikasiActivity
 
 private val Context.dataStoreParanmo: DataStore<Preferences> by preferencesDataStore(name = "paranmo")
 class HomeFragment : Fragment() {
@@ -68,7 +69,7 @@ class HomeFragment : Fragment() {
         }
 
         bindingHome?.cardScan?.setOnClickListener{
-            val intent = Intent(requireActivity() , CameraIdentifikasiActivity::class.java)
+            val intent = Intent(requireActivity() , ResultIdentifikasiActivity::class.java)
             startActivity(intent)
             Toast.makeText(requireActivity(), getString(R.string.camera_identification), Toast.LENGTH_SHORT).show()
         }
@@ -94,6 +95,10 @@ class HomeFragment : Fragment() {
         homeViewModel = ViewModelProvider(
             this, FactoryViewModel(preferencesParanmo)
         )[HomeViewModel::class.java]
+
+        homeViewModel.getUserParanmo().observe(requireActivity()){user ->
+            homeViewModel.setParanmo(id = user.id)
+        }
     }
 
 }

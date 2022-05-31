@@ -45,7 +45,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun setUpViewModel() {
-        val preferencesParanmo = PreferenceAkunParanmo.getInstanceParanmoApp(this.dataStoreParanmo)
+        val preferencesParanmo = PreferenceAkunParanmo.getInstanceParanmoApp(dataStoreParanmo)
 
         loginParanmoModel = ViewModelProvider(
             this@LoginActivity, FactoryViewModel(preferencesParanmo)
@@ -69,7 +69,7 @@ class LoginActivity : AppCompatActivity() {
 
         binding.login.setOnClickListener{
             val emailAccountParanmo = binding.email.text.toString()
-            val passwordAccountParanmo = binding.password.text.toString()
+            val passwordAccountParanmo = binding.password.text.toString().trim()
 
             binding.progressLogin.visibility = View.VISIBLE
 

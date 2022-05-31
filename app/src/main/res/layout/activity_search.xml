@@ -9,7 +9,7 @@
     tools:context=".ui.home.search.SearchActivity">
 
 
-  <FrameLayout
+  <androidx.cardview.widget.CardView
       android:layout_width="0dp"
       android:layout_height="wrap_content"
       app:layout_constraintEnd_toEndOf="parent"
@@ -74,5 +74,5 @@
           tools:ignore="RtlSymmetry" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-  </FrameLayout>
+  </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,12 +8,12 @@
     tools:context=".ui.profil.addplant.AddPlantActivity"
     >
 
-    <FrameLayout
+    <androidx.cardview.widget.CardView
         android:id="@+id/frameLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
-        android:background="@color/primary_10"
+        android:background="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -21,7 +21,7 @@
             android:id="@+id/constraintLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/primary_10"
+            android:background="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -55,7 +55,7 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </FrameLayout>
+    </androidx.cardview.widget.CardView>
 
 
     <ScrollView

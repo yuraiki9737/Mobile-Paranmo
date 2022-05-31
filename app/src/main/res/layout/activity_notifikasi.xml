@@ -7,7 +7,7 @@
     android:background="@color/primary_10"
     tools:context=".ui.home.notif.NotifikasiActivity">
 
-    <FrameLayout
+    <androidx.cardview.widget.CardView
         android:id="@+id/frameLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -68,7 +68,7 @@
                 tools:ignore="MissingConstraints" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </FrameLayout>
+    </androidx.cardview.widget.CardView>
 
 
     <ScrollView
@@ -447,6 +447,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:visibility="gone"
+                    android:layout_marginTop="10dp"
                     app:cardBackgroundColor="@color/neutral_10"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"

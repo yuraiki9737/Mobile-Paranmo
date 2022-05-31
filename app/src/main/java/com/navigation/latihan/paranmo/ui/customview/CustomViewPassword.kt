@@ -54,7 +54,7 @@ class CustomViewPassword : TextInputEditText, View.OnTouchListener {
 
             override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
                 // Do nothing.
-                if (s.toString().length < 6) showErrorPassword()
+                if (s.toString().length < 8) showErrorPassword()
             }
 
             override fun afterTextChanged(s: Editable) {

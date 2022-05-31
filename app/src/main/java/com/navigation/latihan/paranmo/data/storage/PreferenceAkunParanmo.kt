@@ -35,9 +35,10 @@ class PreferenceAkunParanmo private constructor(private val dataStoreParanmo: Da
 
     suspend fun login(){
         dataStoreParanmo.edit { preferences ->
-            preferences[ACCOUNT_STATE_KEY] = true
+            preferences[ACCOUNT_STATE_KEY]= true
         }
     }
+
 
     suspend fun logoutAccountParanmo(){
         dataStoreParanmo.edit { preferences ->

@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.favorit.FavoritActivity">
 
-    <FrameLayout
+    <androidx.cardview.widget.CardView
         android:id="@+id/frameLayout2"
         android:layout_width="0dp"
         android:background="@color/primary_10"
@@ -54,7 +54,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-    </FrameLayout>
+    </androidx.cardview.widget.CardView>
 
     <View
         android:id="@+id/view4"

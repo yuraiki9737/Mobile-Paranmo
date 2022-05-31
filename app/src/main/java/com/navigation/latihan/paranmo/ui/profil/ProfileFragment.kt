@@ -1,5 +1,6 @@
 package com.navigation.latihan.paranmo.ui.profil
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,26 +8,34 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.datastore.core.DataStore
+import androidx.datastore.preferences.core.Preferences
+import androidx.datastore.preferences.preferencesDataStore
+import androidx.lifecycle.ViewModelProvider
 import com.navigation.latihan.paranmo.R
-import com.navigation.latihan.paranmo.databinding.FragmentHomeBinding
+import com.navigation.latihan.paranmo.data.storage.PreferenceAkunParanmo
 import com.navigation.latihan.paranmo.databinding.FragmentProfileBinding
-import com.navigation.latihan.paranmo.ui.home.favorit.FavoritActivity
-import com.navigation.latihan.paranmo.ui.home.notif.NotifikasiActivity
-import com.navigation.latihan.paranmo.ui.home.result.ResultActivity
-import com.navigation.latihan.paranmo.ui.home.search.SearchActivity
-import com.navigation.latihan.paranmo.ui.identifikasitanaman.cameraidentifikasi.CameraIdentifikasiActivity
+import com.navigation.latihan.paranmo.model.FactoryViewModel
+import com.navigation.latihan.paranmo.model.HomeViewModel
+import com.navigation.latihan.paranmo.ui.akun.login.LoginActivity
 import com.navigation.latihan.paranmo.ui.profil.informasiaplikasi.InformasiAplikasiActivity
 
+
+
+private val Context.dataStoreParanmo: DataStore<Preferences> by preferencesDataStore(name = "paranmo")
 class ProfileFragment : Fragment() {
 
 
     private var _bindingProfile: FragmentProfileBinding? = null
     private val bindingProfile get() = _bindingProfile
 
+    private lateinit var profile : HomeViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setHasOptionsMenu(true)
+
+
     }
 
     override fun onCreateView(
@@ -37,29 +46,74 @@ class ProfileFragment : Fragment() {
         _bindingProfile = FragmentProfileBinding.inflate(layoutInflater, container, false)
 
         bindingButton()
+
+
+
+
+
+
         return bindingProfile?.root
+
+    }
+
+
+    private fun setingModel() {
+        val preferences = PreferenceAkunParanmo.getInstanceParanmoApp(requireContext().dataStoreParanmo )
+        profile = ViewModelProvider(
+            this, FactoryViewModel(preferences)
+        )[HomeViewModel::class.java]
+
+        loadingSetting(true)
+        profile.getUserParanmo().observe(requireActivity()) { user ->
+            if (!user.isLogin) {
+                val intent = Intent(requireContext(), LoginActivity::class.java)
+                intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                requireActivity().startActivity(intent)
+                requireActivity().finish()
+            }
+            loadingSetting(false)
+            profile.setParanmo(id = user.id)
+
+
+        }
+    }
+
+    private fun loadingSetting(state:Boolean){
+        if (state){
+            bindingProfile?.progressLogout?.visibility = View.VISIBLE
+        }else{
+            bindingProfile?.progressLogout?.visibility=View.GONE
+        }
     }
 
     private fun bindingButton(){
+        bindingProfile?.btnInsight?.setOnClickListener {
+            Toast.makeText(requireContext(), getString(R.string.coming_soon), Toast.LENGTH_SHORT).show()
+        }
+
+        bindingProfile?.btnLogout?.setOnClickListener {
+            setingModel()
+            profile.logout()
+        }
         bindingProfile?.lock1?.setOnClickListener {
             Toast.makeText(requireContext(), getString(R.string.coming_soon), Toast.LENGTH_SHORT).show()
         }
         bindingProfile?.lock2?.setOnClickListener {
             Toast.makeText(requireContext(), getString(R.string.coming_soon), Toast.LENGTH_SHORT).show()
         }
-        bindingProfile?.paranmo?.setOnClickListener {
+        bindingProfile?.btnParanmo?.setOnClickListener {
             val intent = Intent(requireActivity() , InformasiAplikasiActivity::class.java)
             startActivity(intent)
         }
-        bindingProfile?.frameSyarat?.setOnClickListener {
-            Toast.makeText(requireContext(), getString(R.string.coming_soon), Toast.LENGTH_SHORT).show()
+        bindingProfile?.btnSyarat?.setOnClickListener {
+
+        Toast.makeText(requireContext(), getString(R.string.coming_soon), Toast.LENGTH_SHORT).show()
         }
-        bindingProfile?.frameKebijakan?.setOnClickListener {
+        bindingProfile?.btnKebijakan?.setOnClickListener {
             Toast.makeText(requireContext(), getString(R.string.coming_soon), Toast.LENGTH_SHORT).show()
         }
 
-        bindingProfile?.ulasan?.setOnClickListener {
-            Toast.makeText(requireContext(), getString(R.string.coming_soon), Toast.LENGTH_SHORT).show()
-        }
     }
 }
+
+

@@ -14,6 +14,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.navigation.latihan.paranmo.R
 import com.navigation.latihan.paranmo.databinding.ActivityMainBinding
 import com.navigation.latihan.paranmo.ui.identifikasitanaman.cameraidentifikasi.CameraIdentifikasiActivity
+import com.navigation.latihan.paranmo.ui.identifikasitanaman.resultidentifikasi.ResultIdentifikasiActivity
 import com.navigation.latihan.paranmo.ui.profil.addplant.AddPlantActivity
 
 class MainActivity : AppCompatActivity() {
@@ -49,7 +50,7 @@ class MainActivity : AppCompatActivity() {
             onAddClick()
         }
         binding.fabScan.setOnClickListener{
-            val view = Intent(this@MainActivity, CameraIdentifikasiActivity::class.java)
+            val view = Intent(this@MainActivity, ResultIdentifikasiActivity::class.java)
             startActivity(view)
             Toast.makeText(this, getString(R.string.camera_identification), Toast.LENGTH_SHORT).show()
             onAddClick()

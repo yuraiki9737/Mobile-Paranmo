@@ -4,6 +4,7 @@ data class ResponseLogin(
     val user : LoginAccount,
     val success : Int,
     val message : String,
+
 )
 
 data class LoginAccount(

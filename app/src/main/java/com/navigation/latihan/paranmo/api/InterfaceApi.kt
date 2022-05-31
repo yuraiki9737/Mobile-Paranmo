@@ -10,12 +10,12 @@ import retrofit2.http.POST
 
 interface InterfaceApi {
 
-    @POST("login")
+    @POST("login.php")
     fun loginAkunParanmo(
         @Body login : LoginUser
     ): Call<ResponseLogin>
 
-    @POST("register")
+    @POST("register.php")
     fun registerAkunParanmo(
         @Body register : RegisterUser
     ): Call<ResponseRegister>

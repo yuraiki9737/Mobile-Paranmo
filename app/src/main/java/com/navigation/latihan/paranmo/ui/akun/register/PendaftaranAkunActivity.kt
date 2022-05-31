@@ -61,8 +61,8 @@ class PendaftaranAkunActivity : AppCompatActivity() {
     }
 
     private fun registrationAccountParanmo() {
-        val nameAccountParanmo = binding.name.text.toString().trim()
         val emailAccountParanmo = binding.email.text.toString().trim()
+        val nameAccountParanmo = binding.name.text.toString().trim()
         val passwordAccountParanmo = binding.password.text.toString().trim()
 
         binding.progressRegister.visibility = View.VISIBLE

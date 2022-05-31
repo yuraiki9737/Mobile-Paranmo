@@ -7,7 +7,7 @@ android {
     compileSdk 32
 
     defaultConfig {
-        buildConfigField "String", "API_PARANMO", '"https://story-api.dicoding.dev/v1/"'
+        buildConfigField "String", "API_PARANMO", '"http://34.101.99.92/API/"'
         applicationId "com.navigation.latihan.paranmo"
         minSdk 21
         targetSdk 32
@@ -76,5 +76,12 @@ dependencies {
     implementation "androidx.datastore:datastore-preferences:1.0.0"
 
     //tensorflow dependency
+    implementation 'org.tensorflow:tensorflow-lite-support:0.1.0'
+    implementation 'org.tensorflow:tensorflow-lite-metadata:0.1.0'
+    implementation 'org.tensorflow:tensorflow-lite-gpu:2.3.0'
+
+    //other
+    implementation "com.github.bumptech.glide:glide:4.13.1"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
 }
