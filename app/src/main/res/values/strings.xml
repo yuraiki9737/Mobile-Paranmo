@@ -7,7 +7,7 @@
     <string name="todo">TODO</string>
     <string name="beta_version">Beta version</string>
     <string name="email">Email</string>
-    <string name="failed_password">password tidak boleh kurang dari 6 huruf</string>
+    <string name="failed_password">password tidak boleh kurang dari 8 huruf</string>
     <string name="input_password">Password</string>
     <string name="failed_email">Format email anda tidak benar</string>
     <string name="login">Login</string>
@@ -87,6 +87,14 @@
     <string name="invalidAccount">Akun tidak berhasil dibuat</string>
     <string name="sukses">Login Sukses!</string>
     <string name="failed">Username dan password tidak sesuai</string>
+    <string name="camera_use">Kamera</string>
+    <string name="info">Perhatian</string>
+    <string name="description_info">sebelum melakukan identifikasi tanaman herbal ada beberapa yang harus di perhatikan untuk mendapatkan akurasi yang sesuai</string>
+    <string name="text_info">1. Kamera dan objek maupun itu tanaman atau gambar minimal jarak 5cm\n\n 2. Jika identifikasi menggunakan gambar, maka kualitas gambar harus tetap terjaga dan tidak menurun resolusi gambar maupun ketajaman gambar</string>
+    <string name="use">Cara penggunaan</string>
+    <string name="plant_use">Proses</string>
+    <string name="final_use">Hasil</string>
+    <string name="info_use">Catatan apabila pada saat hasil identifikasi system menampilkan hasil <b>"None"</b> maka hasil tersebut tidak ada di dataset system kami</string>
 
 
 </resources>

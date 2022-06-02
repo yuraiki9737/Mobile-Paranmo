@@ -63,6 +63,11 @@
         <item name="android:textAlignment">center</item>
     </style>
 
+    <style name="title_info">
+        <item name="android:textSize" tools:ignore="SpUsage">18dp</item>
+        <item name="android:textColor">@color/neutral_100</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+    </style>
 
     <style name="text_title_plant">
         <item name="android:textSize" tools:ignore="SpUsage">20dp</item>
@@ -87,6 +92,12 @@
 
     <style name="text">
         <item name="android:textSize" tools:ignore="SpUsage">14dp</item>
+        <item name="android:textColor">@color/neutral_100</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+    </style>
+
+    <style name="text_info">
+        <item name="android:textSize" tools:ignore="SpUsage">12dp</item>
         <item name="android:textColor">@color/neutral_100</item>
         <item name="android:fontFamily">@font/montserrat_regular</item>
     </style>

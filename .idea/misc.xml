@@ -61,16 +61,17 @@
         <entry key="..\:/android/paranmo/app/src/main/res/drawable/ic_vector.xml" value="0.1" />
         <entry key="..\:/android/paranmo/app/src/main/res/drawable/ic_vector1.xml" value="0.1" />
         <entry key="..\:/android/paranmo/app/src/main/res/drawable/nav_on.xml" value="0.123" />
+        <entry key="..\:/android/paranmo/app/src/main/res/drawable/potted_plant.xml" value="0.2" />
         <entry key="..\:/android/paranmo/app/src/main/res/drawable/transparant_background.xml" value="0.1" />
         <entry key="..\:/android/paranmo/app/src/main/res/font/font.xml" value="0.21666666666666667" />
         <entry key="..\:/android/paranmo/app/src/main/res/layout-v26/activity_on_boarding.xml" value="0.1621376811594203" />
-        <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_add_plant.xml" value="0.75" />
+        <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_add_plant.xml" value="0.25" />
         <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_camera.xml" value="0.25" />
         <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_camera_identifikasi.xml" value="0.1" />
         <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_detail_plant.xml" value="0.25" />
         <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_detail_plant_identification.xml" value="0.25" />
         <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_favorit.xml" value="0.2" />
-        <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_informasi_aplikasi.xml" value="0.18" />
+        <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_informasi_aplikasi.xml" value="0.33" />
         <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_notifikasi.xml" value="0.25" />
