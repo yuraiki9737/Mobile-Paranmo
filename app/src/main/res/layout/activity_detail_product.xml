@@ -176,7 +176,11 @@
 
                         <TextView
                             android:id="@+id/price"
+<<<<<<< HEAD
                             style="@style/text_title_price"
+=======
+                            style="@style/text_title_plant"
+>>>>>>> 6aa2adb (paranmo)
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="15dp"
@@ -217,7 +221,10 @@
                             android:layout_marginEnd="15dp"
                             app:cardBackgroundColor="@color/primary_10"
                             app:cardCornerRadius="15dp"
+<<<<<<< HEAD
                             app:cardElevation="5dp"
+=======
+>>>>>>> 6aa2adb (paranmo)
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintHorizontal_bias="0.0"
                             app:layout_constraintStart_toStartOf="parent"
@@ -378,7 +385,10 @@
                             android:layout_marginEnd="15dp"
                             app:cardBackgroundColor="@color/primary_10"
                             app:cardCornerRadius="15dp"
+<<<<<<< HEAD
                             app:cardElevation="5dp"
+=======
+>>>>>>> 6aa2adb (paranmo)
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintHorizontal_bias="0.0"
                             app:layout_constraintStart_toStartOf="parent"
@@ -554,7 +564,10 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="15dp"
                             android:layout_marginTop="20dp"
+<<<<<<< HEAD
                             app:cardElevation="5dp"
+=======
+>>>>>>> 6aa2adb (paranmo)
                             android:layout_marginEnd="15dp"
                             app:cardBackgroundColor="@color/primary_10"
                             app:cardCornerRadius="15dp"
@@ -619,7 +632,10 @@
                             android:layout_marginEnd="15dp"
                             app:cardBackgroundColor="@color/primary_10"
                             app:cardCornerRadius="10dp"
+<<<<<<< HEAD
                             app:cardElevation="5dp"
+=======
+>>>>>>> 6aa2adb (paranmo)
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintHorizontal_bias="0.0"
                             app:layout_constraintStart_toStartOf="parent"
@@ -796,7 +812,11 @@
                 android:layout_width="0dp"
                 android:layout_height="60dp"
                 android:layout_marginTop="20dp"
+<<<<<<< HEAD
                 app:cardElevation="5dp"
+=======
+
+>>>>>>> 6aa2adb (paranmo)
                 app:cardBackgroundColor="@color/primary_10"
                 app:cardCornerRadius="0dp"
                 app:layout_constraintBottom_toBottomOf="parent"

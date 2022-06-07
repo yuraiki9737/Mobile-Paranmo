@@ -8,7 +8,7 @@
     tools:context=".ui.home.favorit.FavoritActivity">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/frameLayout2"
+        android:id="@+id/card_fav"
         android:layout_width="0dp"
         android:background="@color/primary_10"
         android:layout_height="wrap_content"
@@ -66,7 +66,7 @@
         android:background="@drawable/ic_watermelon_pack_illustration_10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout2" />
+        app:layout_constraintTop_toBottomOf="@+id/card_fav" />
 
     <TextView
         style="@style/text_title_on_boarding"
@@ -81,4 +81,14 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view4" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvRoomFavorite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_fav" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
