@@ -11,8 +11,7 @@ import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.ContextCompat
 import com.navigation.latihan.paranmo.databinding.ActivityResultIdentifikasiBinding
-import com.navigation.latihan.paranmo.ml.New
-import com.navigation.latihan.paranmo.ml.ParanmoFinal1
+import com.navigation.latihan.paranmo.ml.BestModelParanmo
 import com.navigation.latihan.paranmo.ui.MainActivity
 import org.tensorflow.lite.support.image.TensorImage
 
@@ -69,7 +68,7 @@ class ResultIdentifikasiActivity : AppCompatActivity() {
 
     private fun output(bitmap: Bitmap) {
 
-        val modelParanmoFinal = New.newInstance(this)
+        val modelParanmoFinal = BestModelParanmo.newInstance(this)
 
         val imageBitmap = bitmap.copy(Bitmap.Config.ARGB_8888, true)
         val tensorImage = TensorImage.fromBitmap(imageBitmap)
