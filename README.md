@@ -17,7 +17,7 @@ In developing this application, there are some processes that we had done:
 5. Developing and Integrating
 6. Testing
 
-### User Research
+## User Research
 The user research was done by all of the team members. We did the research by asking some people and evaluating some comments on the existing similiar applications. Then we gained some user's pain points. The pain points were crucial part to know what must be done for the better development. We also made a competitive research.
 
 Link: [Paranmo User Research](https://docs.google.com/spreadsheets/d/1r3aTNBeMxG34jX-UpMc88H520jb3bLbxr9iqrX_8dL8/edit?usp=sharing)
