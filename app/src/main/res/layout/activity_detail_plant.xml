@@ -26,7 +26,7 @@
         android:id="@+id/frameLayout3"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="360dp"
+        android:layout_marginTop="340dp"
         android:background="@drawable/border_detail"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -57,11 +57,11 @@
                             android:id="@+id/share"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:layout_marginTop="15dp"
+                            android:layout_marginTop="20dp"
                             android:layout_marginEnd="15dp"
                             android:background="@drawable/border_green_dark"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
+                            app:layout_constraintTop_toTopOf="parent"/>
 
                         <View
                             android:id="@+id/view13"
@@ -77,15 +77,16 @@
                             app:layout_constraintStart_toStartOf="@+id/share"
                             app:layout_constraintTop_toTopOf="@+id/share" />
 
+
                         <View
                             android:id="@+id/favorite"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:layout_marginTop="15dp"
+                            android:layout_marginTop="20dp"
                             android:layout_marginEnd="15dp"
                             android:background="@drawable/border_favorite"
                             app:layout_constraintEnd_toStartOf="@+id/share"
-                            app:layout_constraintTop_toTopOf="parent" />
+                            app:layout_constraintTop_toTopOf="parent"/>
 
                         <ToggleButton
                             android:id="@+id/toggleButton"
@@ -103,15 +104,38 @@
                             app:layout_constraintStart_toStartOf="@+id/favorite"
                             app:layout_constraintTop_toTopOf="@+id/favorite" />
 
+                        <View
+                            android:id="@+id/home"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="15dp"
+                            android:background="@drawable/border_home"
+                            app:layout_constraintEnd_toStartOf="@+id/favorite"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <View
+                            android:id="@+id/home_icon"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/ic_round_home_24"
+                            app:layout_constraintBottom_toBottomOf="@+id/home"
+                            app:layout_constraintEnd_toEndOf="@+id/home"
+                            app:layout_constraintStart_toStartOf="@+id/home"
+                            app:layout_constraintTop_toTopOf="@+id/home" />
 
                         <FrameLayout
                             android:id="@+id/date_frame"
-                            android:layout_width="match_parent"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="15dp"
-                            android:layout_marginTop="15dp"
-                            android:layout_marginEnd="170dp"
-                            app:layout_constraintEnd_toStartOf="@+id/favorite"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="15dp"
+                            app:layout_constraintEnd_toStartOf="@+id/home"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent">
 
@@ -230,8 +254,11 @@
                             android:id="@+id/description_card"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/primary_10"
                             android:layout_marginStart="15dp"
                             android:layout_marginTop="30dp"
+                            app:cardCornerRadius="15dp"
+                            app:cardElevation="5dp"
                             android:layout_marginEnd="15dp"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintHorizontal_bias="0.0"
@@ -264,7 +291,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="10dp"
-                                    android:layout_marginTop="10dp"
+                                    android:layout_marginTop="20dp"
                                     android:layout_marginEnd="10dp"
                                     android:text="@string/description_plant"
                                     android:textAlignment="viewStart"
@@ -273,6 +300,13 @@
                                     app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintStart_toStartOf="parent"
                                     app:layout_constraintTop_toBottomOf="@+id/descriptionPlant" />
+
+                                <Space
+                                    android:layout_width="match_parent"
+                                    android:layout_height="10dp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@id/descriptionPlantHerbal"/>
 
                             </androidx.constraintlayout.widget.ConstraintLayout>
                         </com.google.android.material.card.MaterialCardView>
@@ -283,7 +317,10 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="15dp"
+                            app:cardBackgroundColor="@color/primary_10"
                             android:layout_marginTop="30dp"
+                            app:cardCornerRadius="15dp"
+                            app:cardElevation="5dp"
                             android:layout_marginEnd="15dp"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintHorizontal_bias="0.0"
@@ -316,33 +353,98 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="10dp"
-                                    android:layout_marginTop="10dp"
+                                    android:layout_marginTop="20dp"
                                     android:layout_marginEnd="10dp"
-                                    android:text="@string/benefit_plant"
-                                    android:textAlignment="viewStart"
+                                    android:text="@string/coming_soon"
+                                    android:textAlignment="center"
                                     android:textAllCaps="false"
                                     android:transitionName="nameLatinPlantHerbal"
                                     app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintStart_toStartOf="parent"
                                     app:layout_constraintTop_toBottomOf="@+id/benefitPlant" />
 
+
+                                <Space
+                                    android:layout_width="match_parent"
+                                    android:layout_height="10dp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@id/benefitPlantHerbal"/>
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/tutorial_card"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            app:cardBackgroundColor="@color/primary_10"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginEnd="15dp"
+                            app:cardElevation="5dp"
+                            app:cardCornerRadius="15dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/benefit_card"
+                            tools:ignore="MissingConstraints">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+
+                                <TextView
+                                    android:id="@+id/tutorial_Plant"
+                                    style="@style/text_title_card_plant"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:text="@string/tutorial_plant"
+                                    android:textAlignment="viewStart"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/tutorialPlantHerbal"
+                                    style="@style/text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:text="@string/coming_soon"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:transitionName="nameLatinPlantHerbal"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/tutorial_Plant" />
+
+
+                                <Space
+                                    android:layout_width="match_parent"
+                                    android:layout_height="10dp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@id/tutorialPlantHerbal"/>
                             </androidx.constraintlayout.widget.ConstraintLayout>
                         </com.google.android.material.card.MaterialCardView>
 
                         <androidx.recyclerview.widget.RecyclerView
                             android:id="@+id/rvHome"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="15dp"
+                            android:layout_height="300dp"
                             android:layout_marginTop="30dp"
-                            android:layout_marginEnd="15dp"
-                            android:clipToPadding="false"
-                            android:paddingStart="16dp"
-                            android:paddingEnd="0dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/benefit_card"
-                            tools:listitem="@layout/item_row_home"/>
+                            app:layout_constraintTop_toBottomOf="@+id/tutorial_card"
+                            tools:listitem="@layout/item_row_home" />
 
                         <Space
                             android:layout_width="match_parent"

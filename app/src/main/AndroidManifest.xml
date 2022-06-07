@@ -12,10 +12,8 @@
     <uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         android:maxSdkVersion="18" />
-
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-
 
     <application
         android:allowBackup="true"
@@ -23,38 +21,36 @@
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:usesCleartextTraffic="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Paranmo"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".ui.paranshop.detailproduct.DetailProductActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:exported="false">
         </activity>
         <activity
             android:name=".ui.identifikasitanaman.cameraidentifikasi.CameraIdentifikasiActivity"
             android:exported="false"
-            android:theme="@style/Theme.Paranmo"/>
+            android:theme="@style/Theme.Paranmo" />
         <activity
             android:name=".ui.identifikasitanaman.detailidentification.DetailPlantIdentificationActivity"
             android:exported="false"
-            android:theme="@style/Theme.Paranmo"/>
+            android:theme="@style/Theme.Paranmo" />
         <activity
             android:name=".ui.home.detailplant.DetailPlantActivity"
             android:exported="false"
             android:theme="@style/Theme.Paranmo">
+
         </activity>
-
-
         <activity
             android:name=".ui.profil.addplant.AddPlantActivity"
             android:exported="false"
-            android:theme="@style/Theme.Paranmo"/>
+            android:theme="@style/Theme.Paranmo" />
         <activity
             android:name=".ui.profil.informasiaplikasi.InformasiAplikasiActivity"
             android:exported="false"
@@ -64,15 +60,15 @@
         <activity
             android:name=".ui.identifikasitanaman.resultidentifikasi.ResultIdentifikasiActivity"
             android:exported="false"
-            android:theme="@style/Theme.Paranmo"/>
+            android:theme="@style/Theme.Paranmo" />
         <activity
             android:name=".ui.home.result.ResultActivity"
             android:exported="false"
-            android:theme="@style/Theme.Paranmo"/>
+            android:theme="@style/Theme.Paranmo" />
         <activity
             android:name=".ui.profil.addplant.CameraActivity"
             android:exported="false"
-            android:theme="@style/Theme.Paranmo"/>
+            android:theme="@style/Theme.Paranmo" />
         <activity
             android:name=".ui.home.notif.NotifikasiActivity"
             android:exported="false"
@@ -82,15 +78,15 @@
         <activity
             android:name=".ui.home.favorit.FavoritActivity"
             android:exported="false"
-            android:theme="@style/Theme.Paranmo"/>
+            android:theme="@style/Theme.Paranmo" />
         <activity
             android:name=".ui.home.search.SearchActivity"
             android:exported="false"
-            android:theme="@style/Theme.Paranmo"/>
+            android:theme="@style/Theme.Paranmo" />
         <activity
             android:name=".ui.akun.register.PendaftaranAkunActivity"
             android:exported="false"
-            android:theme="@style/Theme.SplashScreen"/>
+            android:theme="@style/Theme.SplashScreen" />
         <activity
             android:name=".ui.splashscreen.SplashScreenActivity"
             android:exported="false"
@@ -98,15 +94,18 @@
         <activity
             android:name=".ui.akun.login.LoginActivity"
             android:exported="false"
-            android:theme="@style/Theme.SplashScreen" >
-
+            android:theme="@style/Theme.SplashScreen">
 
         </activity>
         <activity
             android:name=".ui.onboarding.OnBoardingActivity"
-           android:exported="false"
-            android:theme="@style/Theme.SplashScreen" >
+            android:exported="true"
+            android:theme="@style/Theme.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
         <provider

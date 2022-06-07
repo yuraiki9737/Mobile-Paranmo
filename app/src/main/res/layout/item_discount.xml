@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/discount"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    android:layout_gravity="center"
+    tools:src = "@drawable/border"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:ignore="MissingConstraints">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/viewPayment"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="18dp"
+        tools:src="@drawable/ic_round_account_balance_wallet_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/txt_discount"
+        style="@style/text_discount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        tools:text="@string/discount"
+        app:layout_constraintStart_toEndOf="@id/viewPayment"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TooDeepLayout" />
+
+    <TextView
+        android:id="@+id/txtPer"
+        style="@style/text_discount_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        tools:text="@string/discount_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_discount"
+        tools:ignore="TooDeepLayout" />
+
+    <TextView
+        android:id="@+id/txtDes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textAlignment="viewStart"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/txt_discount"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginStart="15dp"
+        tools:ignore="TooDeepLayout"
+        tools:text="@string/discount_1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/discountProduct"
+        style="@style/button_discount"
+        android:layout_width="118dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="16dp"
+        android:height="56dp"
+        android:text="@string/button_discount"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPer"
+        tools:src="@drawable/border" />
+
+    <View
+        android:id="@+id/viewImage"
+        android:layout_width="0dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/discount" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
+

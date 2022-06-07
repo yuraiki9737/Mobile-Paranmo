@@ -3,45 +3,49 @@
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:layout_width="155dp"
-    android:layout_height="215dp"
+    android:layout_width="wrap_content"
+    android:layout_height="235dp"
     android:id="@+id/card"
+    card_view:cardElevation="8dp"
     android:layout_gravity="center"
-    android:layout_marginLeft="10dp"
+    android:layout_marginEnd="15dp"
     android:layout_marginTop="10dp"
-    android:layout_marginRight="10dp"
+    android:layout_marginStart="15dp"
     android:layout_marginBottom="10dp"
+    android:background="@color/primary_10"
     card_view:cardCornerRadius="20dp"
     >
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="155dp"
-        android:layout_height="215dp"
+        android:layout_width="wrap_content"
+        android:layout_height="225dp"
         android:padding="0dp">
 
 
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/photo"
-            android:layout_width="155dp"
-            android:layout_height="128dp"
-            android:cropToPadding="false"
-            android:scaleType="centerCrop"
-            android:contentDescription="@string/todo"
-            card_view:layout_constraintEnd_toEndOf="parent"
-            card_view:layout_constraintStart_toStartOf="parent"
-            card_view:layout_constraintTop_toTopOf="parent"
-            tools:src="@tools:sample/backgrounds/scenic">
 
-        </com.google.android.material.imageview.ShapeableImageView>
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/photo"
+                android:layout_width="160dp"
+                android:layout_height="128dp"
+                android:contentDescription="@string/todo"
+                android:cropToPadding="true"
+                android:scaleType="centerCrop"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent"
+                tools:src="@tools:sample/backgrounds/scenic">
+
+            </com.google.android.material.imageview.ShapeableImageView>
+
 
         <TextView
             android:id="@+id/plant"
             style="@style/text_card"
             android:layout_width="wrap_content"
-            android:layout_height="31sp"
-            android:layout_marginStart="45dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="15dp"
             android:layout_marginTop="12dp"
-            android:layout_marginEnd="45dp"
+            android:layout_marginEnd="15dp"
             android:ellipsize="end"
             android:gravity="center_vertical|left"
             card_view:layout_constraintEnd_toEndOf="parent"
@@ -54,11 +58,11 @@
             android:id="@+id/latin"
             style="@style/text_latin"
             android:layout_width="wrap_content"
-            android:layout_height="23dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginBottom="24dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
             android:ellipsize="end"
             android:gravity="center"
             card_view:layout_constraintBottom_toBottomOf="parent"

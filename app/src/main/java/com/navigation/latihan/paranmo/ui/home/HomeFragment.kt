@@ -1,7 +1,9 @@
 package com.navigation.latihan.paranmo.ui.home
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
+import android.content.res.Configuration
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -12,18 +14,17 @@ import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.navigation.latihan.paranmo.R
 import com.navigation.latihan.paranmo.data.storage.PreferenceAkunParanmo
 import com.navigation.latihan.paranmo.databinding.FragmentHomeBinding
 import com.navigation.latihan.paranmo.model.FactoryViewModel
 import com.navigation.latihan.paranmo.model.HomeViewModel
-import com.navigation.latihan.paranmo.ui.home.adapter.AdapterHomeFragment
+import com.navigation.latihan.paranmo.adapter.AdapterHomeFragment
 import com.navigation.latihan.paranmo.ui.home.favorit.FavoritActivity
 import com.navigation.latihan.paranmo.ui.home.notif.NotifikasiActivity
 import com.navigation.latihan.paranmo.ui.home.result.ResultActivity
 import com.navigation.latihan.paranmo.ui.home.search.SearchActivity
-import com.navigation.latihan.paranmo.ui.identifikasitanaman.cameraidentifikasi.CameraIdentifikasiActivity
 import com.navigation.latihan.paranmo.ui.identifikasitanaman.resultidentifikasi.ResultIdentifikasiActivity
 
 private val Context.dataStoreParanmo: DataStore<Preferences> by preferencesDataStore(name = "paranmo")
@@ -83,13 +84,26 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        //recyclerViewInitStory()
-        recyclerViewAllStory()
+        recyclerViewInitArticle()
+        recyclerViewAllArticle()
 
 
     }
 
-    private fun recyclerViewAllStory() {
+    private fun recyclerViewInitArticle() {
+        var row = 1
+        if ( resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE)
+        {
+            row = 1
+        }
+
+        bindingHome?.rvHome?.layoutManager = StaggeredGridLayoutManager(row, StaggeredGridLayoutManager.HORIZONTAL)
+        adapterHome = AdapterHomeFragment()
+        bindingHome?.rvHome?.adapter = adapterHome
+    }
+
+    @SuppressLint("NotifyDataSetChanged")
+    private fun recyclerViewAllArticle() {
         val preferencesParanmo = PreferenceAkunParanmo.getInstanceParanmoApp(requireContext().dataStoreParanmo)
 
         homeViewModel = ViewModelProvider(
@@ -98,6 +112,14 @@ class HomeFragment : Fragment() {
 
         homeViewModel.getUserParanmo().observe(requireActivity()){user ->
             homeViewModel.setParanmo(id = user.id)
+        }
+
+        homeViewModel.getArticle().observe(requireActivity()){
+            if (it != null){
+                adapterHome.setArticleList(it)
+                adapterHome.notifyDataSetChanged()
+
+            }
         }
     }
 

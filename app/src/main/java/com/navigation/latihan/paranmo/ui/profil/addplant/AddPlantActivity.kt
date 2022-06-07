@@ -13,8 +13,8 @@ import androidx.core.content.ContextCompat
 import com.navigation.latihan.paranmo.R
 import com.navigation.latihan.paranmo.databinding.ActivityAddPlantBinding
 import com.navigation.latihan.paranmo.ui.MainActivity
-import com.navigation.latihan.paranmo.ui.profil.addplant.utils.rotateBitmapImage
-import com.navigation.latihan.paranmo.ui.profil.addplant.utils.uriToFile
+import com.navigation.latihan.paranmo.utils.Utils.rotateBitmapImage
+import com.navigation.latihan.paranmo.utils.Utils.uriToFile
 import java.io.File
 
 class AddPlantActivity : AppCompatActivity() {
@@ -65,6 +65,10 @@ class AddPlantActivity : AppCompatActivity() {
        binding.backFavorit.setOnClickListener {
             val intent = Intent(this@AddPlantActivity , MainActivity::class.java)
             startActivity(intent)
+        }
+
+        binding.upload.setOnClickListener {
+            Toast.makeText(this, getString(R.string.coming_soon), Toast.LENGTH_SHORT).show()
         }
 
         binding.buttonCamera.setOnClickListener { startCameraX() }

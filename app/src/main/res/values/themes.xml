@@ -76,6 +76,13 @@
         <item name="android:textAlignment">center</item>
     </style>
 
+    <style name="text_title_price">
+        <item name="android:textSize" tools:ignore="SpUsage">22dp</item>
+        <item name="android:textColor">@color/neutral_100</item>
+        <item name="android:fontFamily">@font/montserrat_semibold</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
     <style name="text_title_card_plant">
         <item name="android:textSize" tools:ignore="SpUsage">15dp</item>
         <item name="android:textColor">@color/neutral_100</item>
@@ -115,6 +122,19 @@
         <item name="android:fontFamily">@font/montserrat_medium</item>
     </style>
 
+    <style name="text_time_insight">
+        <item name="android:textSize" tools:ignore="SpUsage">11dp</item>
+        <item name="android:textColor">@color/neutral_60</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+    </style>
+
+
+    <style name="text_online">
+        <item name="android:textSize" tools:ignore="SpUsage">11dp</item>
+        <item name="android:textColor">@color/accents_60</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+    </style>
+
     <style name="text_button_daftar">
         <item name="android:textSize" tools:ignore="SpUsage">17dp</item>
         <item name="android:textColor">@color/accents_60</item>
@@ -125,6 +145,13 @@
     <style name="text_daftar_akun">
         <item name="android:textSize" tools:ignore="SpUsage">14dp</item>
         <item name="android:textColor">@color/neutral_60</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="text_follow">
+        <item name="android:textSize" tools:ignore="SpUsage">11dp</item>
+        <item name="android:textColor">@color/accents_60</item>
         <item name="android:fontFamily">@font/montserrat_medium</item>
         <item name="android:textAlignment">center</item>
     </style>
@@ -167,6 +194,55 @@
         <item name="android:textSize" tools:ignore="SpUsage">28dp</item>
         <item name="android:textColor">@color/neutral_100</item>
         <item name="android:fontFamily">@font/montserrat_semibold</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="text_discount">
+        <item name="android:textSize" tools:ignore="SpUsage">17dp</item>
+        <item name="android:textColor">@color/neutral_100</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+
+    <style name="text_discount_1">
+        <item name="android:textSize" tools:ignore="SpUsage">22dp</item>
+        <item name="android:textColor">@color/accents_60</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+
+    <style name="text_discount_payment">
+        <item name="android:textSize" tools:ignore="SpUsage">22dp</item>
+        <item name="android:textColor">@color/warning_60</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+
+    <style name="text_discount_2">
+        <item name="android:textSize" tools:ignore="SpUsage">11dp</item>
+        <item name="android:textColor">@color/neutral_100</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+
+    <style name="text_price_discount">
+        <item name="android:textSize" tools:ignore="SpUsage">11dp</item>
+        <item name="android:textColor">@color/neutral_100</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+
+    <style name="button_discount">
+        <item name="android:textSize" tools:ignore="SpUsage">11dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="button_discount_payment">
+        <item name="android:textSize" tools:ignore="SpUsage">11dp</item>
+        <item name="android:textColor">@color/warning_60</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
         <item name="android:textAlignment">center</item>
     </style>
 
@@ -215,4 +291,38 @@
         <item name="android:textColor">@color/neutral_60</item>
         <item name="android:fontFamily">@font/montserrat_regular</item>
     </style>
+
+    <style name="text_location">
+        <item name="android:textSize" tools:ignore="SpUsage">11dp</item>
+        <item name="android:textColor">@color/neutral_100</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+    </style>
+
+    <style name="text_star">
+        <item name="android:textSize" tools:ignore="SpUsage">9dp</item>
+        <item name="android:textColor">@color/neutral_100</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+    </style>
+
+    <style name="roundedImage">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10dp</item>
+        <item name="color">@color/white</item>
+    </style>
+
+    <style name="text_button_buy">
+        <item name="android:textSize" tools:ignore="SpUsage">14dp</item>
+        <item name="android:textColor">@color/accents_60</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="text_button_cart">
+        <item name="android:textSize" tools:ignore="SpUsage">14dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+
 </resources>

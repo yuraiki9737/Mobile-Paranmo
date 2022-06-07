@@ -13,9 +13,9 @@ import androidx.datastore.preferences.preferencesDataStore
 import androidx.lifecycle.ViewModelProvider
 import com.navigation.latihan.paranmo.R
 import com.navigation.latihan.paranmo.api.RetrofitClient
-import com.navigation.latihan.paranmo.data.LoginAccount
+import com.navigation.latihan.paranmo.data.response.LoginAccount
 import com.navigation.latihan.paranmo.data.LoginUser
-import com.navigation.latihan.paranmo.data.ResponseLogin
+import com.navigation.latihan.paranmo.data.response.ResponseLogin
 import com.navigation.latihan.paranmo.data.storage.PreferenceAkunParanmo
 import com.navigation.latihan.paranmo.databinding.ActivityLoginBinding
 import com.navigation.latihan.paranmo.model.FactoryViewModel

@@ -9,7 +9,7 @@ import android.widget.Toast
 import com.navigation.latihan.paranmo.R
 import com.navigation.latihan.paranmo.api.RetrofitClient
 import com.navigation.latihan.paranmo.data.RegisterUser
-import com.navigation.latihan.paranmo.data.ResponseRegister
+import com.navigation.latihan.paranmo.data.response.ResponseRegister
 import com.navigation.latihan.paranmo.databinding.ActivityPendaftaranAkunBinding
 import com.navigation.latihan.paranmo.ui.akun.login.LoginActivity
 import retrofit2.Call

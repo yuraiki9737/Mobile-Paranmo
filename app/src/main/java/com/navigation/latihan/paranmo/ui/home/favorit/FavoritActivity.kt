@@ -22,5 +22,6 @@ class FavoritActivity : AppCompatActivity() {
             val view = Intent(this@FavoritActivity, MainActivity::class.java)
             startActivity(view)
         }
+
     }
 }

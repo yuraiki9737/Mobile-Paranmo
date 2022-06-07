@@ -16,6 +16,9 @@ class FactoryViewModel (private val preferenceAkunParanmo: PreferenceAkunParanmo
             modelClass.isAssignableFrom(HomeViewModel::class.java) -> {
                 HomeViewModel(preferenceAkunParanmo) as T
             }
+            modelClass.isAssignableFrom(ProductViewModel::class.java) -> {
+                ProductViewModel(preferenceAkunParanmo) as T
+            }
 
                 else -> throw IllegalArgumentException("Unknown ViewModel class: " + modelClass.name)
         }

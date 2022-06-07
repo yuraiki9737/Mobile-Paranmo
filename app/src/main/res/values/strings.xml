@@ -48,10 +48,8 @@
     <string name="profile">Profile</string>
     <string name="failed_pic">Gagal mengambil photo</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="camera_identification">Menampilkan Fitur Scanning Tanaman</string>
     <string name="add_plant">Menampilkan Membuat Postingan Tanaman Herbal</string>
-    <string name="coming_soon_paranmo_shop">Maaf fitur ParanShop sedang tahap pengembangan. Kami akan segera kembali</string>
     <string name="coming_soon_parannity">Maaf fitur ParanNity sedang tahap pengembangan. Kami akan segera kembali</string>
     <string name="home_one">Identifikasi</string>
     <string name="home_two">tanaman</string>
@@ -90,11 +88,112 @@
     <string name="camera_use">Kamera</string>
     <string name="info">Perhatian</string>
     <string name="description_info">sebelum melakukan identifikasi tanaman herbal ada beberapa yang harus di perhatikan untuk mendapatkan akurasi yang sesuai</string>
-    <string name="text_info">1. Kamera dan objek maupun itu tanaman atau gambar minimal jarak 5cm\n\n 2. Jika identifikasi menggunakan gambar, maka kualitas gambar harus tetap terjaga dan tidak menurun resolusi gambar maupun ketajaman gambar</string>
+    <string name="text_info">1. Kamera dan objek maupun itu tanaman atau gambar minimal jarak 10cm\n\n 2. Jika identifikasi menggunakan gambar, maka kualitas gambar harus tetap terjaga dan tidak menurun resolusi gambar maupun ketajaman gambar</string>
     <string name="use">Cara penggunaan</string>
     <string name="plant_use">Proses</string>
     <string name="final_use">Hasil</string>
     <string name="info_use">Catatan apabila pada saat hasil identifikasi system menampilkan hasil <b>"None"</b> maka hasil tersebut tidak ada di dataset system kami</string>
+    <string name="search_bar">Mencari obat dan tanaman herbal</string>
+    <string name="discount">Diskon</string>
+    <string name="discount_1">25%</string>
+    <string name="discount_2">untuk pengguna baru</string>
+    <string name="button_discount">Klaim Sekarang</string>
+    <string name="discountPayment">10%</string>
+    <string name="discountPaymentDes">Pembayaran melalui transfer</string>
+    <string name="category_1">Tanaman Herbal</string>
+    <string name="category_2">Obatan Herbal</string>
+    <string name="p_discount">Produk Diskon</string>
+    <string name="p_terlaris">Produk Terlaris</string>
+    <string name="location_1">Kota Banjar</string>
+    <string name="star_1">4,9</string>
+    <string name="price_1">Rp. 80.000</string>
+    <string name="plant_1">Tanaman Lidah…</string>
 
 
+    <string name="nameproduct">Nama Produk</string>
+    <string name="price_product">Harga Produk</string>
+    <string name="location_product">Lokasi Produk</string>
+    <string name="star_product">Bintang Produk</string>
+    <string name="name_product_full">Full Nama Produk</string>
+    <string name="date_product">Tanggal Produk</string>
+    <string name="insight_product">Ulasan Produk</string>
+    <string name="time_booking_product">Waktu Pesanan Produk</string>
+    <string name="booking_product">Pesanan Produk</string>
+    <string name="description_product">Deskripsi Produk</string>
+    <string name="score_insight">Jumah Ulasan</string>
+    <string name="star_prodcut_detail">Jumlah Bintang Ulasan</string>
+    <string name="time_product_insight">Waktu Ulasan Produk</string>
+    <string name="name_person_product">Nama pengguna</string>
+    <string name="detail_insight">Ulasan Pengguna</string>
+    <string name="name_outlite">Nama Toko</string>
+    <string name="logo_outlite">Logo Toko</string>
+    <string name="price_discount"><strike>Rp. 80.000</strike></string>
+    <string name="price_new">Rp. 80.000</string>
+    <string name="online">Online</string>
+    <string name="follow">Follow</string>
+    <string name="conditionProduct">Kondisi Produk</string>
+    <string name="newconditionProduct">Baru</string>
+    <string name="detailProduct">Detail Produk</string>
+    <string name="statusProduct">Status</string>
+    <string name="status_Product">Ready</string>
+    <string name="product">Lainnya di toko ini</string>
+    <string name="insightProduct">Ulasan</string>
+    <string name="time_insight">2 hari yang lalu</string>
+    <string name="person">Dani Salaman</string>
+    <string name="bookingProduct">Pesanan</string>
+    <string name="tutorial_plant">Cara Pemakaian</string>
+    <string name="health"><![CDATA[Tips & Trik Kesehatan]]></string>
+    <string name="budidaya">Budidaya Tanaman Herbal</string>
+    <string name="buy">Beli Sekarang</string>
+    <string name="cart">Keranjang</string>
+
+
+    <!-- Discount -->
+    <string-array name="frameDis">
+        <item>@drawable/border_discount</item>
+        <item>@drawable/border_discount_payment_frame</item>
+    </string-array>
+    <string-array name="viewPay">
+        <item>@drawable/ic_round_person_24_filled</item>
+        <item>@drawable/ic_round_account_balance_wallet_24</item>
+    </string-array>
+    <string-array name="txtDis">
+        <item>Diskon</item>
+        <item>Diskon</item>
+    </string-array>
+    <string-array name="txtDes">
+        <item>untuk pengguna baru</item>
+        <item>Pembayaran melalui transfer</item>
+    </string-array>
+    <string-array name="txtPer">
+        <item>25%</item>
+        <item>10%</item>
+    </string-array>
+    <string-array name="txtPerStyle">
+        <item>@color/accents_60</item>
+        <item>@color/warning_60</item>
+    </string-array>
+    <string-array name="disProd">
+        <item>@drawable/border</item>
+        <item>@drawable/border_discount_payment</item>
+    </string-array>
+    <string-array name="viewImage">
+        <item>@drawable/discount</item>
+        <item>@drawable/wallet</item>
+    </string-array>
+
+
+    <!-- Category -->
+    <string-array name="frameCat">
+        <item>@drawable/border_category_1</item>
+        <item>@drawable/border_category_2</item>
+    </string-array>
+    <string-array name="viewImageCat">
+        <item>@drawable/tanaman_herbal</item>
+        <item>@drawable/obat_herbal</item>
+    </string-array>
+    <string-array name="txtCat">
+        <item>Tanaman Herbal</item>
+        <item>Obat Herbal</item>
+    </string-array>
 </resources>

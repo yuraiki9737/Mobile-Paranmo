@@ -16,8 +16,7 @@ import androidx.core.content.ContextCompat
 import com.navigation.latihan.paranmo.R
 import com.navigation.latihan.paranmo.databinding.ActivityCameraBinding
 import com.navigation.latihan.paranmo.ui.MainActivity
-import com.navigation.latihan.paranmo.ui.profil.addplant.utils.createFile
-
+import com.navigation.latihan.paranmo.utils.Utils.createFile
 class CameraActivity : AppCompatActivity() {
 
     private lateinit var binding : ActivityCameraBinding

@@ -3,14 +3,49 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/android/paranmo official/paranmo/app/src/main/res/drawable/ic_baseline_access_time_filled_24.xml" value="0.1985" />
+        <entry key="..\:/android/paranmo official/paranmo/app/src/main/res/layout/activity_add_plant.xml" value="0.12454710144927536" />
+        <entry key="..\:/android/paranmo official/paranmo/app/src/main/res/layout/activity_camera.xml" value="0.12454710144927536" />
+        <entry key="..\:/android/paranmo official/paranmo/app/src/main/res/layout/activity_camera_identifikasi.xml" value="0.12454710144927536" />
+        <entry key="..\:/android/paranmo official/paranmo/app/src/main/res/layout/activity_detail_plant.xml" value="0.25" />
+        <entry key="..\:/android/paranmo official/paranmo/app/src/main/res/layout/activity_detail_plant_identification.xml" value="0.12454710144927536" />
+        <entry key="..\:/android/paranmo official/paranmo/app/src/main/res/layout/activity_detail_product.xml" value="0.33" />
+        <entry key="..\:/android/paranmo official/paranmo/app/src/main/res/layout/activity_favorit.xml" value="0.12454710144927536" />
+        <entry key="..\:/android/paranmo official/paranmo/app/src/main/res/layout/activity_informasi_aplikasi.xml" value="0.12454710144927536" />
+        <entry key="..\:/android/paranmo official/paranmo/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/android/paranmo official/paranmo/app/src/main/res/layout/activity_main.xml" value="0.12454710144927536" />
+        <entry key="..\:/android/paranmo official/paranmo/app/src/main/res/layout/activity_notifikasi.xml" value="0.12454710144927536" />
+        <entry key="..\:/android/paranmo official/paranmo/app/src/main/res/layout/activity_on_boarding.xml" value="0.12454710144927536" />
+        <entry key="..\:/android/paranmo official/paranmo/app/src/main/res/layout/activity_pendaftaran_akun.xml" value="0.12454710144927536" />
+        <entry key="..\:/android/paranmo official/paranmo/app/src/main/res/layout/activity_result.xml" value="0.12454710144927536" />
+        <entry key="..\:/android/paranmo official/paranmo/app/src/main/res/layout/activity_result_identifikasi.xml" value="0.12454710144927536" />
+        <entry key="..\:/android/paranmo official/paranmo/app/src/main/res/layout/activity_search.xml" value="0.12454710144927536" />
+        <entry key="..\:/android/paranmo official/paranmo/app/src/main/res/layout/activity_splash_screen.xml" value="0.12454710144927536" />
+        <entry key="..\:/android/paranmo official/paranmo/app/src/main/res/layout/fragment_home.xml" value="0.12454710144927536" />
+        <entry key="..\:/android/paranmo official/paranmo/app/src/main/res/layout/fragment_paran_nity.xml" value="0.12454710144927536" />
+        <entry key="..\:/android/paranmo official/paranmo/app/src/main/res/layout/fragment_paran_shop.xml" value="0.12454710144927536" />
+        <entry key="..\:/android/paranmo official/paranmo/app/src/main/res/layout/fragment_profile.xml" value="0.4854771784232365" />
+        <entry key="..\:/android/paranmo official/paranmo/app/src/main/res/layout/item_category.xml" value="0.12454710144927536" />
+        <entry key="..\:/android/paranmo official/paranmo/app/src/main/res/layout/item_discount.xml" value="0.12454710144927536" />
+        <entry key="..\:/android/paranmo official/paranmo/app/src/main/res/layout/item_product.xml" value="0.5" />
+        <entry key="..\:/android/paranmo official/paranmo/app/src/main/res/layout/item_row_home.xml" value="0.5" />
+        <entry key="..\:/android/paranmo official/paranmo/app/src/main/res/layout/item_row_identifikasi.xml" value="0.1921875" />
         <entry key="..\:/android/paranmo/app/src/main/res/drawable-v24/border.xml" value="0.1" />
         <entry key="..\:/android/paranmo/app/src/main/res/drawable-v24/border_accents_40.xml" value="0.181" />
         <entry key="..\:/android/paranmo/app/src/main/res/drawable-v24/border_home.xml" value="0.1925" />
         <entry key="..\:/android/paranmo/app/src/main/res/drawable-v24/border_notif_off.xml" value="0.181" />
         <entry key="..\:/android/paranmo/app/src/main/res/drawable-v24/border_off.xml" value="0.1515" />
+        <entry key="..\:/android/paranmo/app/src/main/res/drawable-v24/ic_broken_image.xml" value="0.1" />
         <entry key="..\:/android/paranmo/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.167" />
+        <entry key="..\:/android/paranmo/app/src/main/res/drawable-v24/strikethrough_detail.xml" value="0.1" />
         <entry key="..\:/android/paranmo/app/src/main/res/drawable-v24/stroke.xml" value="0.155" />
+        <entry key="..\:/android/paranmo/app/src/main/res/drawable/bg_tanaman_herbal.xml" value="0.145" />
+        <entry key="..\:/android/paranmo/app/src/main/res/drawable/border_category_1.xml" value="0.145" />
+        <entry key="..\:/android/paranmo/app/src/main/res/drawable/border_category_2.xml" value="0.145" />
         <entry key="..\:/android/paranmo/app/src/main/res/drawable/border_detail.xml" value="0.181" />
+        <entry key="..\:/android/paranmo/app/src/main/res/drawable/border_discount.xml" value="0.145" />
+        <entry key="..\:/android/paranmo/app/src/main/res/drawable/border_discount_payment.xml" value="0.145" />
+        <entry key="..\:/android/paranmo/app/src/main/res/drawable/border_discount_payment_frame.xml" value="0.145" />
         <entry key="..\:/android/paranmo/app/src/main/res/drawable/border_favorite.xml" value="0.181" />
         <entry key="..\:/android/paranmo/app/src/main/res/drawable/border_green_dark.xml" value="0.181" />
         <entry key="..\:/android/paranmo/app/src/main/res/drawable/border_login.xml" value="0.181" />
@@ -41,51 +76,71 @@
         <entry key="..\:/android/paranmo/app/src/main/res/drawable/ic_ilustrasi_parannity.xml" value="0.181" />
         <entry key="..\:/android/paranmo/app/src/main/res/drawable/ic_launcher_background.xml" value="0.167" />
         <entry key="..\:/android/paranmo/app/src/main/res/drawable/ic_logo5_13_14491_1.xml" value="0.181" />
+        <entry key="..\:/android/paranmo/app/src/main/res/drawable/ic_outline_feed_24.xml" value="0.145" />
+        <entry key="..\:/android/paranmo/app/src/main/res/drawable/ic_place_holder.xml" value="0.1" />
+        <entry key="..\:/android/paranmo/app/src/main/res/drawable/ic_round_add_24.xml" value="0.2" />
+        <entry key="..\:/android/paranmo/app/src/main/res/drawable/ic_round_chat_bubble_24.xml" value="0.2" />
         <entry key="..\:/android/paranmo/app/src/main/res/drawable/ic_round_email_24.xml" value="0.1785" />
         <entry key="..\:/android/paranmo/app/src/main/res/drawable/ic_round_favorite_24_green.xml" value="0.1925" />
         <entry key="..\:/android/paranmo/app/src/main/res/drawable/ic_round_favorite_24_home.xml" value="0.1925" />
         <entry key="..\:/android/paranmo/app/src/main/res/drawable/ic_round_favorite_border_24_off.xml" value="0.1925" />
         <entry key="..\:/android/paranmo/app/src/main/res/drawable/ic_round_home_24.xml" value="0.123" />
         <entry key="..\:/android/paranmo/app/src/main/res/drawable/ic_round_insert_photo_24.xml" value="0.1785" />
+        <entry key="..\:/android/paranmo/app/src/main/res/drawable/ic_round_location_on_24.xml" value="0.145" />
         <entry key="..\:/android/paranmo/app/src/main/res/drawable/ic_round_lock_24.xml" value="0.1785" />
         <entry key="..\:/android/paranmo/app/src/main/res/drawable/ic_round_motion_photos_on_24.xml" value="0.1765" />
         <entry key="..\:/android/paranmo/app/src/main/res/drawable/ic_round_motion_photos_on_24_30.xml" value="0.1785" />
         <entry key="..\:/android/paranmo/app/src/main/res/drawable/ic_round_motion_photos_on_24_60.xml" value="0.1785" />
         <entry key="..\:/android/paranmo/app/src/main/res/drawable/ic_round_password_24.xml" value="0.1785" />
         <entry key="..\:/android/paranmo/app/src/main/res/drawable/ic_round_person_24.xml" value="0.1785" />
+        <entry key="..\:/android/paranmo/app/src/main/res/drawable/ic_round_person_24_filled.xml" value="0.1" />
+        <entry key="..\:/android/paranmo/app/src/main/res/drawable/ic_round_person_outline_24.xml" value="0.1" />
         <entry key="..\:/android/paranmo/app/src/main/res/drawable/ic_round_search_24.xml" value="0.1785" />
         <entry key="..\:/android/paranmo/app/src/main/res/drawable/ic_round_search_24_white.xml" value="0.1785" />
         <entry key="..\:/android/paranmo/app/src/main/res/drawable/ic_round_search_white_24.xml" value="0.1785" />
+        <entry key="..\:/android/paranmo/app/src/main/res/drawable/ic_round_shopping_bag_24_green.xml" value="0.145" />
         <entry key="..\:/android/paranmo/app/src/main/res/drawable/ic_round_supervised_user_circle_24.xml" value="0.1785" />
         <entry key="..\:/android/paranmo/app/src/main/res/drawable/ic_round_upload_24.xml" value="0.1785" />
         <entry key="..\:/android/paranmo/app/src/main/res/drawable/ic_vector.xml" value="0.1" />
         <entry key="..\:/android/paranmo/app/src/main/res/drawable/ic_vector1.xml" value="0.1" />
+        <entry key="..\:/android/paranmo/app/src/main/res/drawable/ic_watermelon_pack_illustration_06.xml" value="0.145" />
+        <entry key="..\:/android/paranmo/app/src/main/res/drawable/ic_watermelon_pack_illustration_10.xml" value="0.145" />
+        <entry key="..\:/android/paranmo/app/src/main/res/drawable/ic_watermelon_pack_illustration_11.xml" value="0.145" />
+        <entry key="..\:/android/paranmo/app/src/main/res/drawable/ic_watermelon_pack_illustration_19.xml" value="0.145" />
         <entry key="..\:/android/paranmo/app/src/main/res/drawable/nav_on.xml" value="0.123" />
         <entry key="..\:/android/paranmo/app/src/main/res/drawable/potted_plant.xml" value="0.2" />
+        <entry key="..\:/android/paranmo/app/src/main/res/drawable/strikethrough.xml" value="0.171" />
+        <entry key="..\:/android/paranmo/app/src/main/res/drawable/strikethrough_detail.xml" value="0.171" />
         <entry key="..\:/android/paranmo/app/src/main/res/drawable/transparant_background.xml" value="0.1" />
         <entry key="..\:/android/paranmo/app/src/main/res/font/font.xml" value="0.21666666666666667" />
+        <entry key="..\:/android/paranmo/app/src/main/res/layout-v23/item_product_discount.xml" value="0.19114583333333332" />
         <entry key="..\:/android/paranmo/app/src/main/res/layout-v26/activity_on_boarding.xml" value="0.1621376811594203" />
         <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_add_plant.xml" value="0.25" />
         <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_camera.xml" value="0.25" />
         <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_camera_identifikasi.xml" value="0.1" />
-        <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_detail_plant.xml" value="0.25" />
+        <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_detail_plant.xml" value="0.33" />
         <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_detail_plant_identification.xml" value="0.25" />
+        <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_detail_product.xml" value="0.22" />
         <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_favorit.xml" value="0.2" />
-        <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_informasi_aplikasi.xml" value="0.33" />
-        <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_informasi_aplikasi.xml" value="0.311178247734139" />
+        <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_login.xml" value="0.18258426966292135" />
         <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_notifikasi.xml" value="0.25" />
         <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_on_boarding.xml" value="0.25" />
         <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_pendaftaran_akun.xml" value="0.25" />
-        <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_result.xml" value="0.18" />
+        <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_result.xml" value="0.22" />
         <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_result_identifikasi.xml" value="0.22" />
         <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_search.xml" value="0.18243243243243243" />
         <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_splash_screen.xml" value="0.2" />
         <entry key="..\:/android/paranmo/app/src/main/res/layout/fragment_home.xml" value="0.18" />
         <entry key="..\:/android/paranmo/app/src/main/res/layout/fragment_paran_nity.xml" value="0.25" />
-        <entry key="..\:/android/paranmo/app/src/main/res/layout/fragment_paran_shop.xml" value="0.1921875" />
+        <entry key="..\:/android/paranmo/app/src/main/res/layout/fragment_paran_shop.xml" value="0.20552147239263804" />
         <entry key="..\:/android/paranmo/app/src/main/res/layout/fragment_profile.xml" value="0.33" />
-        <entry key="..\:/android/paranmo/app/src/main/res/layout/item_row_home.xml" value="0.25" />
+        <entry key="..\:/android/paranmo/app/src/main/res/layout/item_category.xml" value="0.33" />
+        <entry key="..\:/android/paranmo/app/src/main/res/layout/item_discount.xml" value="0.18" />
+        <entry key="..\:/android/paranmo/app/src/main/res/layout/item_product.xml" value="0.12" />
+        <entry key="..\:/android/paranmo/app/src/main/res/layout/item_product_discount.xml" value="0.6808118081180812" />
+        <entry key="..\:/android/paranmo/app/src/main/res/layout/item_row_home.xml" value="0.14947916666666666" />
         <entry key="..\:/android/paranmo/app/src/main/res/layout/item_row_identifikasi.xml" value="0.22" />
         <entry key="..\:/android/paranmo/app/src/main/res/menu/bottom_navigate.xml" value="0.1921875" />
         <entry key="..\:/android/paranmo/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.167" />

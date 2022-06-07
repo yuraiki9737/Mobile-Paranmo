@@ -45,6 +45,7 @@ class ProfileFragment : Fragment() {
         // Inflate the layout for this fragment
         _bindingProfile = FragmentProfileBinding.inflate(layoutInflater, container, false)
 
+
         bindingButton()
 
 
@@ -69,10 +70,9 @@ class ProfileFragment : Fragment() {
                 val intent = Intent(requireContext(), LoginActivity::class.java)
                 intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                 requireActivity().startActivity(intent)
-                requireActivity().finish()
+
             }
             loadingSetting(false)
-            profile.setParanmo(id = user.id)
 
 
         }
@@ -94,6 +94,7 @@ class ProfileFragment : Fragment() {
         bindingProfile?.btnLogout?.setOnClickListener {
             setingModel()
             profile.logout()
+            requireActivity().finish()
         }
         bindingProfile?.lock1?.setOnClickListener {
             Toast.makeText(requireContext(), getString(R.string.coming_soon), Toast.LENGTH_SHORT).show()

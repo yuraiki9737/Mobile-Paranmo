@@ -1,0 +1,75 @@
+package com.navigation.latihan.paranmo.adapter
+
+import android.app.Activity
+import android.content.Intent
+import android.view.LayoutInflater
+import android.view.ViewGroup
+import androidx.core.app.ActivityOptionsCompat
+import androidx.core.app.ActivityOptionsCompat.makeSceneTransitionAnimation
+import androidx.core.util.Pair
+import androidx.core.view.PointerIconCompat.load
+import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
+import com.bumptech.glide.load.resource.bitmap.CenterInside
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners
+import com.navigation.latihan.paranmo.R
+import com.navigation.latihan.paranmo.data.Article
+import com.navigation.latihan.paranmo.databinding.ItemRowHomeBinding
+import com.navigation.latihan.paranmo.ui.home.detailplant.DetailPlantActivity
+
+class AdapterHome : RecyclerView.Adapter<AdapterHome.HomeViewHolder>() {
+
+    private var listArticle : List<Article>? = null
+
+    fun setArticleList (listArticle: List<Article>?){
+        this.listArticle = listArticle
+    }
+
+    inner class HomeViewHolder(private val binding : ItemRowHomeBinding): RecyclerView.ViewHolder(binding.root) {
+        fun bind(dataArticle: Article){
+            itemView.setOnClickListener{
+                val intentArticle = Intent(itemView.context, DetailPlantActivity::class.java)
+                intentArticle.putExtra(DATA_ARTICLE, dataArticle)
+
+                val optionsCompat : ActivityOptionsCompat = makeSceneTransitionAnimation(
+                    itemView.context as Activity,
+                    Pair(binding.photo, "image"),
+                    Pair(binding.plant, "plant_name"),
+                    Pair(binding.latin, "latin_name")
+                )
+
+                itemView.context.startActivity(intentArticle, optionsCompat.toBundle())
+            }
+            binding.apply {
+                Glide.with(itemView)
+                    .load(dataArticle.photo_url)
+                    .placeholder(R.drawable.ic_place_holder)
+                    .error(R.drawable.ic_broken_image)
+                    .transform(CenterInside() , RoundedCorners(20))
+                    .into(photo)
+
+                plant.text = dataArticle.plant_name
+                latin.text = dataArticle.latin_name
+            }
+        }
+
+    }
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HomeViewHolder {
+        val viewArticle = ItemRowHomeBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        return HomeViewHolder(viewArticle)
+    }
+
+    override fun onBindViewHolder(holder: HomeViewHolder, position: Int) {
+       holder.bind(listArticle?.get(position)!!)
+    }
+
+    override fun getItemCount(): Int {
+        return if(listArticle == null)0
+        else listArticle?.size!!
+    }
+
+    companion object{
+        const val DATA_ARTICLE = "dataArticle"
+    }
+}
