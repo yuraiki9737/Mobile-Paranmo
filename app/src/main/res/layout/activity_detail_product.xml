@@ -59,10 +59,12 @@
                             android:id="@+id/share"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:layout_marginTop="20dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="15dp"
                             android:layout_marginEnd="15dp"
                             android:background="@drawable/border_green_dark"
                             app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/favorite"
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <View
@@ -79,15 +81,44 @@
                             app:layout_constraintStart_toStartOf="@+id/share"
                             app:layout_constraintTop_toTopOf="@+id/share" />
 
+                        <View
+                            android:id="@+id/home"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@drawable/border_home"
+                            app:layout_constraintEnd_toStartOf="@+id/favorite"
+                            app:layout_constraintStart_toEndOf="@+id/date_frame"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <View
+                            android:id="@+id/home_icon"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:background="@drawable/ic_round_home_24"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:textOff=""
+                            android:textOn=""
+                            app:layout_constraintBottom_toBottomOf="@+id/home"
+                            app:layout_constraintEnd_toEndOf="@+id/home"
+                            app:layout_constraintStart_toStartOf="@+id/home"
+                            app:layout_constraintTop_toTopOf="@+id/home" />
 
                         <View
                             android:id="@+id/favorite"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginEnd="15dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="10dp"
                             android:background="@drawable/border_favorite"
                             app:layout_constraintEnd_toStartOf="@+id/share"
+                            app:layout_constraintStart_toEndOf="@+id/home"
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <ToggleButton
@@ -105,31 +136,6 @@
                             app:layout_constraintEnd_toEndOf="@+id/favorite"
                             app:layout_constraintStart_toStartOf="@+id/favorite"
                             app:layout_constraintTop_toTopOf="@+id/favorite" />
-
-                        <View
-                            android:id="@+id/home"
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginEnd="15dp"
-                            android:background="@drawable/border_home"
-                            app:layout_constraintEnd_toStartOf="@+id/favorite"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                        <View
-                            android:id="@+id/home_icon"
-                            android:layout_width="35dp"
-                            android:layout_height="35dp"
-                            android:layout_marginStart="5dp"
-                            android:layout_marginTop="5dp"
-                            android:layout_marginEnd="5dp"
-                            android:layout_marginBottom="5dp"
-                            android:background="@drawable/ic_round_home_24"
-                            app:layout_constraintBottom_toBottomOf="@+id/home"
-                            app:layout_constraintEnd_toEndOf="@+id/home"
-                            app:layout_constraintStart_toStartOf="@+id/home"
-                            app:layout_constraintTop_toTopOf="@+id/home" />
-
                         <FrameLayout
                             android:id="@+id/date_frame"
                             android:layout_width="0dp"
@@ -176,19 +182,13 @@
 
                         <TextView
                             android:id="@+id/price"
-<<<<<<< HEAD
-                            style="@style/text_title_price"
-=======
                             style="@style/text_title_plant"
->>>>>>> 6aa2adb (paranmo)
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="15dp"
                             android:layout_marginTop="30dp"
                             android:layout_marginEnd="15dp"
                             android:textAlignment="viewStart"
-                            android:textAllCaps="false"
-                            android:transitionName="namePlantHerbal"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@id/date_frame"
@@ -204,8 +204,6 @@
                             android:layout_marginEnd="15dp"
                             android:layout_marginBottom="20dp"
                             android:textAlignment="viewStart"
-                            android:textAllCaps="false"
-                            android:transitionName="nameLatinPlantHerbal"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/price"
@@ -221,10 +219,7 @@
                             android:layout_marginEnd="15dp"
                             app:cardBackgroundColor="@color/primary_10"
                             app:cardCornerRadius="15dp"
-<<<<<<< HEAD
-                            app:cardElevation="5dp"
-=======
->>>>>>> 6aa2adb (paranmo)
+                            app:cardElevation="2dp"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintHorizontal_bias="0.0"
                             app:layout_constraintStart_toStartOf="parent"
@@ -252,9 +247,9 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="18dp"
                                     android:layout_marginStart="10dp"
-                                    android:layout_marginTop="15dp"
+                                    android:layout_marginTop="5dp"
                                     app:layout_constraintStart_toEndOf="@+id/logoOutlite"
-                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintTop_toTopOf="@+id/logoOutlite"
                                     tools:text="@string/name_outlite" />
 
                                 <TextView
@@ -265,6 +260,7 @@
                                     android:layout_marginStart="10dp"
                                     android:layout_marginTop="2dp"
                                     android:text="@string/online"
+                                    app:layout_constraintBottom_toBottomOf="@+id/logoOutlite"
                                     app:layout_constraintStart_toEndOf="@+id/logoOutlite"
                                     app:layout_constraintTop_toBottomOf="@+id/name_outlite" />
 
@@ -284,12 +280,13 @@
 
                                 <FrameLayout
                                     android:id="@+id/star"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="15dp"
                                     android:layout_marginTop="23dp"
                                     android:layout_marginBottom="10dp"
                                     app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toStartOf="@+id/time"
                                     app:layout_constraintStart_toStartOf="parent"
                                     app:layout_constraintTop_toBottomOf="@id/logoOutlite">
 
@@ -313,14 +310,16 @@
                                         <TextView
                                             android:id="@+id/starInsight"
                                             style="@style/text_location"
-                                            android:layout_width="wrap_content"
+                                            android:layout_width="0dp"
                                             android:layout_height="wrap_content"
                                             android:layout_marginStart="5dp"
                                             android:layout_marginTop="5dp"
+                                            android:layout_marginEnd="15dp"
                                             android:layout_marginBottom="5dp"
                                             android:textAllCaps="false"
                                             android:transitionName="name"
                                             app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintEnd_toEndOf="parent"
                                             app:layout_constraintStart_toEndOf="@+id/star_icon"
                                             app:layout_constraintTop_toTopOf="parent"
                                             tools:text="@string/star_1" />
@@ -329,9 +328,8 @@
 
                                 <FrameLayout
                                     android:id="@+id/time"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginStart="20dp"
                                     android:layout_marginEnd="15dp"
                                     app:layout_constraintBottom_toBottomOf="@+id/star"
                                     app:layout_constraintEnd_toEndOf="parent"
@@ -358,14 +356,16 @@
                                         <TextView
                                             android:id="@+id/timeBooking"
                                             style="@style/text_location"
-                                            android:layout_width="wrap_content"
+                                            android:layout_width="0dp"
                                             android:layout_height="wrap_content"
                                             android:layout_marginStart="5dp"
                                             android:layout_marginTop="5dp"
+                                            android:layout_marginEnd="15dp"
                                             android:layout_marginBottom="5dp"
                                             android:textAllCaps="false"
                                             android:transitionName="name"
                                             app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintEnd_toEndOf="parent"
                                             app:layout_constraintStart_toEndOf="@+id/time_icon"
                                             app:layout_constraintTop_toTopOf="parent"
                                             tools:text="@string/time_booking_product" />
@@ -385,10 +385,7 @@
                             android:layout_marginEnd="15dp"
                             app:cardBackgroundColor="@color/primary_10"
                             app:cardCornerRadius="15dp"
-<<<<<<< HEAD
-                            app:cardElevation="5dp"
-=======
->>>>>>> 6aa2adb (paranmo)
+                            app:cardElevation="2dp"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintHorizontal_bias="0.0"
                             app:layout_constraintStart_toStartOf="parent"
@@ -417,7 +414,7 @@
                                 <TextView
                                     android:id="@+id/conditionProduct"
                                     style="@style/text_price_discount"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="15dp"
                                     android:layout_marginTop="19dp"
@@ -429,7 +426,7 @@
                                 <TextView
                                     android:id="@+id/newConditionProduct"
                                     style="@style/text_card"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="68dp"
                                     android:layout_marginTop="19dp"
@@ -453,7 +450,7 @@
                                 <TextView
                                     android:id="@+id/bookingProduct"
                                     style="@style/text_price_discount"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="15dp"
                                     android:layout_marginTop="12dp"
@@ -465,11 +462,11 @@
                                 <TextView
                                     android:id="@+id/booking"
                                     style="@style/text_card"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginStart="130dp"
+                                    android:layout_marginStart="105dp"
                                     android:layout_marginTop="10dp"
-                                    android:layout_marginEnd="117dp"
+                                    android:layout_marginEnd="60dp"
                                     android:textAlignment="viewStart"
                                     app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintStart_toEndOf="@+id/bookingProduct"
@@ -489,7 +486,7 @@
                                 <TextView
                                     android:id="@+id/statusProduct"
                                     style="@style/text_price_discount"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="15dp"
                                     android:layout_marginTop="12dp"
@@ -501,7 +498,7 @@
                                 <TextView
                                     android:id="@+id/status_product"
                                     style="@style/text_card"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="117dp"
                                     android:layout_marginTop="10dp"
@@ -564,10 +561,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="15dp"
                             android:layout_marginTop="20dp"
-<<<<<<< HEAD
-                            app:cardElevation="5dp"
-=======
->>>>>>> 6aa2adb (paranmo)
+                            app:cardElevation="2dp"
                             android:layout_marginEnd="15dp"
                             app:cardBackgroundColor="@color/primary_10"
                             app:cardCornerRadius="15dp"
@@ -585,7 +579,7 @@
                                 <TextView
                                     android:id="@+id/product"
                                     style="@style/text_title_notif"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="15dp"
                                     android:layout_marginTop="15dp"
@@ -597,10 +591,10 @@
                                 <TextView
                                     android:id="@+id/showAllProduct"
                                     style="@style/text_home"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="110dp"
-                                    android:layout_marginTop="20dp"
+                                    android:layout_marginTop="18dp"
                                     android:layout_marginEnd="15dp"
                                     android:text="@string/show_all"
                                     android:textAlignment="viewEnd"
@@ -632,10 +626,7 @@
                             android:layout_marginEnd="15dp"
                             app:cardBackgroundColor="@color/primary_10"
                             app:cardCornerRadius="10dp"
-<<<<<<< HEAD
-                            app:cardElevation="5dp"
-=======
->>>>>>> 6aa2adb (paranmo)
+                            app:cardElevation="2dp"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintHorizontal_bias="0.0"
                             app:layout_constraintStart_toStartOf="parent"
@@ -650,7 +641,7 @@
                                 <TextView
                                     android:id="@+id/insightProduct"
                                     style="@style/text_title_notif"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="15dp"
                                     android:layout_marginTop="15dp"
@@ -662,7 +653,7 @@
                                 <TextView
                                     android:id="@+id/scoreInsight"
                                     style="@style/text_title_notif"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="5dp"
                                     android:layout_marginTop="15dp"
@@ -688,9 +679,9 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="5dp"
-                                    android:layout_marginTop="16dp"
+                                    app:layout_constraintBottom_toBottomOf="@+id/starIcon"
                                     app:layout_constraintStart_toEndOf="@+id/starIcon"
-                                    app:layout_constraintTop_toBottomOf="@id/insightProduct"
+                                    app:layout_constraintTop_toTopOf="@+id/starIcon"
                                     tools:text="@string/star_1" />
 
 
@@ -708,8 +699,8 @@
                                     android:id="@+id/star2"
                                     android:layout_width="22dp"
                                     android:layout_height="22dp"
-                                    android:layout_marginStart="0dp"
                                     android:background="@drawable/ic_round_star_24"
+                                    app:layout_constraintBottom_toBottomOf="@+id/star1"
                                     app:layout_constraintStart_toEndOf="@id/star1"
                                     app:layout_constraintTop_toTopOf="@id/star1" />
 
@@ -717,8 +708,8 @@
                                     android:id="@+id/star3"
                                     android:layout_width="22dp"
                                     android:layout_height="22dp"
-                                    android:layout_marginStart="0dp"
                                     android:background="@drawable/ic_round_star_24"
+                                    app:layout_constraintBottom_toBottomOf="@+id/star2"
                                     app:layout_constraintStart_toEndOf="@id/star2"
                                     app:layout_constraintTop_toTopOf="@id/star2" />
 
@@ -726,8 +717,8 @@
                                     android:id="@+id/star4"
                                     android:layout_width="22dp"
                                     android:layout_height="22dp"
-                                    android:layout_marginStart="0dp"
                                     android:background="@drawable/ic_round_star_24"
+                                    app:layout_constraintBottom_toBottomOf="@+id/star3"
                                     app:layout_constraintStart_toEndOf="@id/star3"
                                     app:layout_constraintTop_toTopOf="@id/star3" />
 
@@ -735,8 +726,8 @@
                                     android:id="@+id/star5"
                                     android:layout_width="22dp"
                                     android:layout_height="22dp"
-                                    android:layout_marginStart="0dp"
                                     android:background="@drawable/ic_round_star_24"
+                                    app:layout_constraintBottom_toBottomOf="@+id/star4"
                                     app:layout_constraintStart_toEndOf="@id/star4"
                                     app:layout_constraintTop_toTopOf="@id/star4" />
 
@@ -759,18 +750,20 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="5dp"
-                                    app:layout_constraintBottom_toBottomOf="@+id/star5"
+                                    app:layout_constraintBottom_toBottomOf="@+id/timeProduct"
                                     app:layout_constraintStart_toEndOf="@id/timeProduct"
-                                    app:layout_constraintTop_toTopOf="@id/star5"
+                                    app:layout_constraintTop_toTopOf="@+id/timeProduct"
                                     tools:text="@string/person" />
 
                                 <TextView
                                     android:id="@+id/descriptionInsight"
                                     style="@style/text_discount_2"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="15dp"
                                     android:layout_marginTop="10dp"
+                                    android:layout_marginEnd="15dp"
+                                    app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintStart_toStartOf="parent"
                                     app:layout_constraintTop_toBottomOf="@id/star5"
                                     tools:text="@string/person" />
@@ -812,11 +805,7 @@
                 android:layout_width="0dp"
                 android:layout_height="60dp"
                 android:layout_marginTop="20dp"
-<<<<<<< HEAD
                 app:cardElevation="5dp"
-=======
-
->>>>>>> 6aa2adb (paranmo)
                 app:cardBackgroundColor="@color/primary_10"
                 app:cardCornerRadius="0dp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -833,14 +822,14 @@
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/cart"
                         style="@style/text_button_cart"
-                        android:layout_width="150dp"
+                        android:layout_width="0dp"
                         android:layout_height="50dp"
                         android:layout_marginEnd="15dp"
                         android:height="56dp"
+                        android:background="@drawable/border"
                         android:drawableStart="@drawable/ic_round_add_24"
                         android:paddingStart="15dp"
                         android:paddingEnd="15dp"
-                        android:background="@drawable/border"
                         android:text="@string/cart"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -850,7 +839,7 @@
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/buy"
                         style="@style/text_button_buy"
-                        android:layout_width="150dp"
+                        android:layout_width="0dp"
                         android:layout_height="50dp"
                         android:layout_marginEnd="10dp"
                         android:background="@drawable/stroke"
@@ -864,14 +853,14 @@
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/chat"
                         style="@style/text_button_buy"
-                        android:layout_width="60dp"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="10dp"
                         android:background="@drawable/stroke"
-                        android:paddingStart="18dp"
                         android:drawableStart="@drawable/ic_round_chat_bubble_24"
-                        android:paddingEnd="25dp"
+                        android:paddingStart="18dp"
+                        android:paddingEnd="40dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/buy"
                         app:layout_constraintStart_toStartOf="parent"

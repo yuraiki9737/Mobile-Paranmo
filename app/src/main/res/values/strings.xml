@@ -15,7 +15,7 @@
     <string name="daftar_akun"><u>Daftar Akun</u></string>
     <string name="daftar_akun_no_underline">Daftar Akun</string>
     <string name="or">Atau</string>
-    <string name="login_via_google">Login via Google</string>
+    <string name="login_via_google">Via Google</string>
     <string name="email_account">Masukkan email anda</string>
     <string name="password_account">Masukkan password anda</string>
     <string name="failed_name">Wajib diisi</string>
@@ -33,7 +33,7 @@
     <string name="result_bar">Result</string>
     <string name="result_identification_bar">Identifikasi Tanaman Herbal</string>
     <string name="information_application">Informasi Aplikasi</string>
-    <string name="description_application"><p>  Bangkit tahun ini kembali menyelenggarakan Capstone Project 2022, dimana mahasiswa akan membuat project aplikasi yang menggabungkan 3 teknologi(cloud computing, machine learning, mobile development) berdasarkan case industri dan beberapa tema seperti economic and social resilience, healthcare, mobile and smart city, dan character building.</p>\n\n<p>  Mengusung tema Healthcare, kami dari tim B22-PS020 membuat aplikasi Paranmo(Paparan tanaman obat) sebagai solusi dari masih kurangnya pengetahuan masyarakat mengenai penggunaan tanaman herbal sebagai obat. Berbekal dari ilmu dan bimbingan dari Bangkit dan mentor, aplikasi ini dirancang untuk dapat melakukan scanning terhadap daun tanaman herbal untuk mengetahui manfaat dan cara penggunaannya dalam mengobati suatu penyakit.</p>\n\n<p>  Aplikasi yang dirancang oleh Alfi Nazilah(STIMIK Tunas Bangsa Banjarnegara), Alsy Taqiya Herasafitri(Universitas Brawijaya), Angel Citra Ornella(Universitas Udayana), Givar Elva Rizky Hana\'an(Universitas Potensi Utama), Muhammad Rohfi(Universitas Yarsi), dan Vita Nurhayati(Universitas Jember) ini mengajak penggunanya untuk tidak hanya dapat mengetahui cara penggunaan tanaman - tanaman herbal, tetapi juga untuk ikut berkontribusi dengan membagikan pengetahuannya tentang tanaman herbal melalui aplikasi.</p>\n</string>
+    <string name="description_application"><p>  Bangkit tahun ini kembali menyelenggarakan Capstone Project 2022, dimana mahasiswa akan membuat project aplikasi yang menggabungkan 3 teknologi(cloud computing, machine learning, mobile development) berdasarkan case industri dan beberapa tema seperti economic and social resilience, healthcare, mobile and smart city, dan character building.</p>\n\n<p>  Mengusung tema Healthcare, kami dari tim C22-PS020 membuat aplikasi Paranmo(Paparan tanaman obat) sebagai solusi dari masih kurangnya pengetahuan masyarakat mengenai penggunaan tanaman herbal sebagai obat. Berbekal dari ilmu dan bimbingan dari Bangkit dan mentor, aplikasi ini dirancang untuk dapat melakukan scanning terhadap daun tanaman herbal untuk mengetahui manfaat dan cara penggunaannya dalam mengobati suatu penyakit.</p>\n\n<p>  Aplikasi yang dirancang oleh Alfi Nazilah(STIMIK Tunas Bangsa Banjarnegara), Alsy Taqiya Herasafitri(Universitas Brawijaya), Angel Citra Ornella(Universitas Udayana), Givar Elva Rizky Hana\'an(Universitas Potensi Utama), Muhammad Rohfi(Universitas Yarsi), dan Vita Nurhayati(Universitas Jember) ini mengajak penggunanya untuk tidak hanya dapat mengetahui cara penggunaan tanaman - tanaman herbal, tetapi juga untuk ikut berkontribusi dengan membagikan pengetahuannya tentang tanaman herbal melalui aplikasi.</p>\n</string>
     <string name="post_bar">Posting</string>
     <string name="failed_camera">Gagal memuat camera</string>
     <string name="camera"><u>Kamera</u></string>
@@ -146,6 +146,7 @@
     <string name="budidaya">Budidaya Tanaman Herbal</string>
     <string name="buy">Beli Sekarang</string>
     <string name="cart">Keranjang</string>
+    <string name="articel_other">Artikel Lainnya</string>
 
 
     <!-- Discount -->

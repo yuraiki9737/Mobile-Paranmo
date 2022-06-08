@@ -27,7 +27,7 @@ import retrofit2.Callback
 import retrofit2.Response
 
 
-private val Context.dataStoreParanmo: DataStore<Preferences> by preferencesDataStore(name = "paranmo")
+private val Context.dataStoreParanmo: DataStore<Preferences> by preferencesDataStore("paranmo")
 class LoginActivity : AppCompatActivity() {
 
     private lateinit var binding : ActivityLoginBinding

@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="710dp"
+    android:layout_height="wrap_content"
     tools:context=".ui.paranshop.ParanShopFragment"
     android:background="@color/primary_10">
 
@@ -97,23 +97,28 @@
                         android:id="@+id/view11"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
+                        android:layout_marginStart="40dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginEnd="15dp"
                         android:layout_marginBottom="10dp"
                         android:background="@drawable/ic_round_search_24"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView13"
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
+                        android:id="@+id/textView13"
                         style="@style/text"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="15dp"
                         android:layout_marginTop="10dp"
+                        android:layout_marginEnd="40dp"
                         android:layout_marginBottom="10dp"
                         android:text="@string/search_bar"
                         app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/view11"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         tools:ignore="MissingConstraints" />
@@ -134,15 +139,16 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="250dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frame">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-<!--            android:orientation="vertical">-->
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -170,7 +176,6 @@
                     tools:listitem="@layout/item_category" />
 
 
-
                 <TextView
                     android:id="@+id/p_discount"
                     style="@style/text_splashscreen"
@@ -182,6 +187,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/rv_category"
                     app:lineHeight="18dp" />
+
                 <TextView
                     android:id="@+id/item_discount"
                     style="@style/text"

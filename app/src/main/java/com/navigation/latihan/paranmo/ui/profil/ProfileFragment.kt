@@ -22,7 +22,7 @@ import com.navigation.latihan.paranmo.ui.profil.informasiaplikasi.InformasiAplik
 
 
 
-private val Context.dataStoreParanmo: DataStore<Preferences> by preferencesDataStore(name = "paranmo")
+private val Context.dataStoreParanmo: DataStore<Preferences> by preferencesDataStore("paranmo")
 class ProfileFragment : Fragment() {
 
 
@@ -35,8 +35,27 @@ class ProfileFragment : Fragment() {
         super.onCreate(savedInstanceState)
         setHasOptionsMenu(true)
 
+        bindingProfile?.btnLogout?.setOnClickListener {
 
-    }
+            loadingSetting(true)
+            profile.getUserParanmo().observe(requireActivity()) { user ->
+                if (!user.isLogin) {
+                    val intent = Intent(requireContext(), LoginActivity::class.java)
+                    intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                    requireActivity().startActivity(intent)
+                    requireActivity().finish()
+
+                }
+                loadingSetting(false)
+
+
+            }
+            profile.logout()
+        }
+
+
+
+        }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -50,33 +69,23 @@ class ProfileFragment : Fragment() {
 
 
 
-
-
-
         return bindingProfile?.root
 
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
-    private fun setingModel() {
         val preferences = PreferenceAkunParanmo.getInstanceParanmoApp(requireContext().dataStoreParanmo )
         profile = ViewModelProvider(
             this, FactoryViewModel(preferences)
         )[HomeViewModel::class.java]
 
-        loadingSetting(true)
-        profile.getUserParanmo().observe(requireActivity()) { user ->
-            if (!user.isLogin) {
-                val intent = Intent(requireContext(), LoginActivity::class.java)
-                intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-                requireActivity().startActivity(intent)
-
-            }
-            loadingSetting(false)
 
 
-        }
+
     }
+
 
     private fun loadingSetting(state:Boolean){
         if (state){
@@ -91,11 +100,7 @@ class ProfileFragment : Fragment() {
             Toast.makeText(requireContext(), getString(R.string.coming_soon), Toast.LENGTH_SHORT).show()
         }
 
-        bindingProfile?.btnLogout?.setOnClickListener {
-            setingModel()
-            profile.logout()
-            requireActivity().finish()
-        }
+
         bindingProfile?.lock1?.setOnClickListener {
             Toast.makeText(requireContext(), getString(R.string.coming_soon), Toast.LENGTH_SHORT).show()
         }

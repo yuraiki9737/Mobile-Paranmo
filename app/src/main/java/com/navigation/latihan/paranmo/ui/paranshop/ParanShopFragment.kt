@@ -26,7 +26,7 @@ import com.navigation.latihan.paranmo.adapter.ListCategoryAdapter
 import com.navigation.latihan.paranmo.adapter.ListDiscountAdapter
 
 
-private val Context.dataStoreParanmo: DataStore<Preferences> by preferencesDataStore(name = "paranmo")
+private val Context.dataStoreParanmo: DataStore<Preferences> by preferencesDataStore("paranmo")
 class ParanShopFragment : Fragment() {
     private var _bindingParanShop: FragmentParanShopBinding? = null
     private val bindingParanshop get() =  _bindingParanShop

@@ -6,14 +6,14 @@
     android:layout_height="275dp"
     android:layout_gravity="center"
     android:orientation="vertical"
-    card_view:cardElevation="8dp"
+    card_view:cardElevation="2dp"
     card_view:cardCornerRadius="20dp"
     android:id="@+id/card_view"
     android:layout_marginEnd="15dp"
     android:layout_marginTop="0dp"
     android:layout_marginStart="15dp"
     android:layout_marginBottom="0dp"
-    android:background="@color/primary_10"
+    card_view:cardBackgroundColor="@color/primary_10"
     tools:ignore="MissingConstraints">
 
     <androidx.constraintlayout.widget.ConstraintLayout

@@ -27,7 +27,7 @@ class AdapterHome : RecyclerView.Adapter<AdapterHome.HomeViewHolder>() {
 
     inner class HomeViewHolder(private val binding : ItemRowHomeBinding): RecyclerView.ViewHolder(binding.root) {
         fun bind(dataArticle: Article){
-            itemView.setOnClickListener{
+            binding.card.setOnClickListener{
                 val intentArticle = Intent(itemView.context, DetailPlantActivity::class.java)
                 intentArticle.putExtra(DATA_ARTICLE, dataArticle)
 

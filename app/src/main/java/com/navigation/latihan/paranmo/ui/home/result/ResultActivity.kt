@@ -18,7 +18,7 @@ import com.navigation.latihan.paranmo.model.HomeViewModel
 import com.navigation.latihan.paranmo.ui.MainActivity
 import com.navigation.latihan.paranmo.adapter.AdapterHome
 
-private val Context.dataStoreParanmo: DataStore<Preferences> by preferencesDataStore(name = "paranmo")
+private val Context.dataStoreParanmo: DataStore<Preferences> by preferencesDataStore("paranmo")
 class ResultActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityResultBinding

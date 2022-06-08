@@ -30,11 +30,6 @@ class PreferenceAkunParanmo private constructor(private val dataStoreParanmo: Da
             preferences[ACCOUNT_NAMA_KEY] = loginAccount.name
             preferences[ACCOUNT_TOKEN_KEY] = loginAccount.token
             preferences[ACCOUNT_STATE_KEY] = loginAccount.isLogin
-        }
-    }
-
-    suspend fun login(){
-        dataStoreParanmo.edit { preferences ->
             preferences[ACCOUNT_STATE_KEY]= true
         }
     }

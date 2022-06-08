@@ -27,7 +27,7 @@ import com.navigation.latihan.paranmo.ui.home.result.ResultActivity
 import com.navigation.latihan.paranmo.ui.home.search.SearchActivity
 import com.navigation.latihan.paranmo.ui.identifikasitanaman.resultidentifikasi.ResultIdentifikasiActivity
 
-private val Context.dataStoreParanmo: DataStore<Preferences> by preferencesDataStore(name = "paranmo")
+private val Context.dataStoreParanmo: DataStore<Preferences> by preferencesDataStore("paranmo")
 class HomeFragment : Fragment() {
 
     private var _bindingHome : FragmentHomeBinding? = null

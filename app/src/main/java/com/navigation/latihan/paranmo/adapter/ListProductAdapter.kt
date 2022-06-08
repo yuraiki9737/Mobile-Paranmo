@@ -28,7 +28,7 @@ class ListProductAdapter: RecyclerView.Adapter<ListProductAdapter.ListViewHolder
 
     inner class ListViewHolder (private val binding: ItemProductBinding): RecyclerView.ViewHolder(binding.root){
         fun bind(dataProduct: Product){
-            itemView.setOnClickListener {
+            binding.cardView.setOnClickListener {
                 val intentProduct = Intent(itemView.context, DetailProductActivity::class.java)
                 intentProduct.putExtra(DATA_PRODUCT, dataProduct)
 

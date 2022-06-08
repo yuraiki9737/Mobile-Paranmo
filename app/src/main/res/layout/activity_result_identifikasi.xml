@@ -11,7 +11,8 @@
         android:id="@+id/frameLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@color/white"
+        app:cardElevation="2dp"
+        app:cardBackgroundColor="@color/primary_10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -61,15 +62,15 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/description"
-        android:layout_width="350dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginStart="15dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="15dp"
+        android:background="@color/primary_10"
         android:orientation="vertical"
         app:cardCornerRadius="20dp"
-        android:background="@color/primary_10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frameLayout"
@@ -130,14 +131,14 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/use_card"
-        android:layout_width="350dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginStart="15dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="15dp"
-        android:orientation="vertical"
         android:background="@color/primary_10"
+        android:orientation="vertical"
         app:cardCornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -164,7 +165,7 @@
 
             <FrameLayout
                 android:id="@+id/frameLayout4"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="20dp"
@@ -180,9 +181,12 @@
 
                     <FrameLayout
                         android:id="@+id/camera_use_frame"
-                        android:layout_width="0dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
                         app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/step_use"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent">
 
@@ -227,12 +231,14 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginStart="15dp"
-                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="15dp"
                         android:contentDescription="@string/todo"
                         android:paddingStart="0dp"
                         android:paddingTop="0dp"
                         android:paddingBottom="0dp"
                         android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/plant_use_frame"
                         app:layout_constraintStart_toEndOf="@+id/camera_use_frame"
                         app:layout_constraintTop_toTopOf="parent"
                         tools:ignore="RtlSymmetry" />
@@ -244,22 +250,26 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginStart="15dp"
-                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="15dp"
                         android:contentDescription="@string/todo"
                         android:paddingStart="0dp"
                         android:paddingTop="0dp"
                         android:paddingBottom="0dp"
                         android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/final_use_frame"
                         app:layout_constraintStart_toEndOf="@+id/plant_use_frame"
                         app:layout_constraintTop_toTopOf="parent"
                         tools:ignore="RtlSymmetry" />
 
                     <FrameLayout
                         android:id="@+id/final_use_frame"
-                        android:layout_width="0dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
                         app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/step_use_1"
                         app:layout_constraintTop_toTopOf="parent">
 
@@ -287,10 +297,11 @@
 
                             <TextView
                                 style="@style/text_info"
-                                android:layout_width="match_parent"
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="5dp"
                                 android:text="@string/final_use"
+                                android:textAlignment="center"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toBottomOf="@+id/final_use"
@@ -301,10 +312,12 @@
 
                     <FrameLayout
                         android:id="@+id/plant_use_frame"
-                        android:layout_width="0dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
                         app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/step_use_1"
                         app:layout_constraintStart_toEndOf="@+id/step_use"
                         app:layout_constraintTop_toTopOf="parent">
 
@@ -332,7 +345,7 @@
 
                             <TextView
                                 style="@style/text_info"
-                                android:layout_width="match_parent"
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="5dp"
                                 android:text="@string/plant_use"
@@ -366,14 +379,14 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card_identification"
-        android:layout_width="155dp"
+        android:layout_width="wrap_content"
         android:layout_height="215dp"
-        android:visibility="gone"
         android:layout_gravity="center"
         android:layout_marginStart="15dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="215dp"
         android:orientation="vertical"
+        android:visibility="gone"
         app:cardCornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -389,7 +402,7 @@
             <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/photo"
 
-                android:layout_width="155dp"
+                android:layout_width="0dp"
                 android:layout_height="128dp"
                 android:contentDescription="@string/todo"
                 android:cropToPadding="false"
@@ -404,11 +417,11 @@
             <TextView
                 android:id="@+id/plant"
                 style="@style/text_card"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="31sp"
                 android:layout_marginTop="20dp"
                 android:ellipsize="end"
-                android:gravity="center_vertical|left"
+                android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/photo"

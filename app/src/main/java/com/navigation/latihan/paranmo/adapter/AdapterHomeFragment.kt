@@ -27,7 +27,7 @@ class AdapterHomeFragment : RecyclerView.Adapter<AdapterHomeFragment.HomeViewHol
 
     inner class HomeViewHolder(private val binding : ItemRowHomeBinding): RecyclerView.ViewHolder(binding.root) {
         fun bind(dataArticle: Article){
-            itemView.setOnClickListener{
+            binding.card.setOnClickListener{
                 val intentArticle = Intent(itemView.context, DetailPlantActivity::class.java)
                 intentArticle.putExtra(AdapterHome.DATA_ARTICLE, dataArticle)
 
@@ -44,11 +44,11 @@ class AdapterHomeFragment : RecyclerView.Adapter<AdapterHomeFragment.HomeViewHol
 
 
             binding.apply {
-                Glide.with(itemView)
+               Glide .with(itemView)
                     .load(dataArticle.photo_url)
                     .placeholder(R.drawable.ic_place_holder)
                     .error(R.drawable.ic_broken_image)
-                    .transform(CenterInside() , RoundedCorners(20))
+                    .transform(CenterInside(), RoundedCorners(20))
                     .into(photo)
 
                 plant.text = dataArticle.plant_name

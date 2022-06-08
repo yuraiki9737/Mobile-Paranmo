@@ -22,9 +22,10 @@ import com.navigation.latihan.paranmo.model.HomeViewModel
 import com.navigation.latihan.paranmo.ui.MainActivity
 import com.navigation.latihan.paranmo.adapter.AdapterHome.Companion.DATA_ARTICLE
 import com.navigation.latihan.paranmo.adapter.AdapterHomeFragment
+import com.navigation.latihan.paranmo.ui.home.result.ResultActivity
 
 
-private val Context.dataStoreParanmo: DataStore<Preferences> by preferencesDataStore(name = "paranmo")
+private val Context.dataStoreParanmo: DataStore<Preferences> by preferencesDataStore("paranmo")
 class DetailPlantActivity : AppCompatActivity() {
 
     private lateinit var homeViewModel: HomeViewModel
@@ -103,8 +104,13 @@ class DetailPlantActivity : AppCompatActivity() {
             shareIntent.type = "text/plain"
             startActivity(shareIntent)
         }
-        binding.favorite.setOnClickListener {
+        binding.toggleButton.setOnClickListener {
             Toast.makeText(this, getString(R.string.coming_soon), Toast.LENGTH_SHORT).show()
+        }
+
+        binding.showAll.setOnClickListener{
+            val intent = Intent(this , ResultActivity::class.java)
+            startActivity(intent)
         }
     }
 }

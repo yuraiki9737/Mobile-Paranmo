@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="700dp"
+    android:layout_height="wrap_content"
     tools:context=".ui.profil.ProfileFragment"
     android:background="@color/primary_10">
 
@@ -155,22 +155,28 @@
 
                             <View
                                 android:id="@+id/logo_paranmo"
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
+                                android:layout_width="25dp"
+                                android:layout_height="30dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="10dp"
                                 android:background="@drawable/logo5_13_14491"
                                 android:contentDescription="@string/todo"
+                                android:textAlignment="center"
                                 app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/text_paranmo"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
 
                             <TextView
                                 android:id="@+id/text_paranmo"
                                 style="@style/text"
-                                android:layout_width="200dp"
+                                android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="10dp"
+                                android:layout_marginEnd="190dp"
                                 android:text="@string/information_paranmo"
                                 app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toEndOf="@+id/logo_paranmo"
                                 app:layout_constraintTop_toTopOf="parent" />
                         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -196,21 +202,25 @@
                                 android:id="@+id/icon_syarat"
                                 android:layout_width="25dp"
                                 android:layout_height="30dp"
-                                android:layout_marginStart="7dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="10dp"
                                 android:background="@drawable/ic_outline_feed_24"
                                 android:contentDescription="@string/todo"
                                 app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/text_syarat"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
 
                             <TextView
                                 android:id="@+id/text_syarat"
                                 style="@style/text"
-                                android:layout_width="200dp"
+                                android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="18dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="137dp"
                                 android:text="@string/information_syarat"
                                 app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toEndOf="@+id/icon_syarat"
                                 app:layout_constraintTop_toTopOf="parent" />
                         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -234,23 +244,27 @@
 
                             <View
                                 android:id="@+id/icon_kebijakan"
-                                android:layout_width="30dp"
+                                android:layout_width="25dp"
                                 android:layout_height="30dp"
                                 android:layout_marginStart="5dp"
+                                android:layout_marginEnd="10dp"
                                 android:background="@drawable/ic_outline_privacy_tip_24"
                                 android:contentDescription="@string/todo"
                                 app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/text_kebijakan"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
 
                             <TextView
                                 android:id="@+id/text_kebijakan"
                                 style="@style/text"
-                                android:layout_width="200dp"
+                                android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="16dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="137dp"
                                 android:text="@string/information_kebijakan"
                                 app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toEndOf="@+id/icon_kebijakan"
                                 app:layout_constraintTop_toTopOf="parent" />
                         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -273,23 +287,27 @@
 
                             <View
                                 android:id="@+id/icon_ulasan"
-                                android:layout_width="30dp"
+                                android:layout_width="25dp"
                                 android:layout_height="30dp"
                                 android:layout_marginStart="5dp"
+                                android:layout_marginEnd="10dp"
                                 android:background="@drawable/ic_round_insights_24"
                                 android:contentDescription="@string/todo"
                                 app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/text_ulasan"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
 
                             <TextView
                                 android:id="@+id/text_ulasan"
                                 style="@style/text"
-                                android:layout_width="200dp"
+                                android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="16dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="131dp"
                                 android:text="@string/information_ulasan"
                                 app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toEndOf="@+id/icon_ulasan"
                                 app:layout_constraintTop_toTopOf="parent" />
                         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -312,23 +330,27 @@
 
                                 <View
                                     android:id="@+id/icon_logout"
-                                    android:layout_width="30dp"
+                                    android:layout_width="25dp"
                                     android:layout_height="30dp"
                                     android:layout_marginStart="5dp"
+                                    android:layout_marginEnd="10dp"
                                     android:background="@drawable/ic_round_logout_24"
                                     android:contentDescription="@string/todo"
                                     app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toStartOf="@+id/text_logout"
                                     app:layout_constraintStart_toStartOf="parent"
                                     app:layout_constraintTop_toTopOf="parent" />
 
                                 <TextView
                                     android:id="@+id/text_logout"
                                     style="@style/text"
-                                    android:layout_width="200dp"
+                                    android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginStart="16dp"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="136dp"
                                     android:text="@string/logout"
                                     app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintStart_toEndOf="@+id/icon_logout"
                                     app:layout_constraintTop_toTopOf="parent" />
                             </androidx.constraintlayout.widget.ConstraintLayout>

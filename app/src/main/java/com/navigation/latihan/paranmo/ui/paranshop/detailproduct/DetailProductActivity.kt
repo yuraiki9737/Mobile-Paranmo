@@ -24,7 +24,7 @@ import com.navigation.latihan.paranmo.adapter.ListProductAdapter.Companion.DATA_
 import com.navigation.latihan.paranmo.ui.paranshop.ParanShopFragment
 
 
-private val Context.dataStoreParanmo: DataStore<Preferences> by preferencesDataStore(name = "paranmo")
+private val Context.dataStoreParanmo: DataStore<Preferences> by preferencesDataStore("paranmo")
 class DetailProductActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityDetailProductBinding

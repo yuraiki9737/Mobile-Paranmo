@@ -21,7 +21,7 @@ import com.navigation.latihan.paranmo.ui.MainActivity
 import com.navigation.latihan.paranmo.ui.akun.login.LoginActivity
 
 
-private val Context.dataStoreParanmo: DataStore<Preferences> by preferencesDataStore(name = "paranmo")
+private val Context.dataStoreParanmo: DataStore<Preferences> by preferencesDataStore("paranmo")
 @SuppressLint("CustomSplashScreen")
 class SplashScreenActivity : AppCompatActivity() {
 
