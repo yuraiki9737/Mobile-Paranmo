@@ -206,150 +206,162 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="380dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frame">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="ScrollViewSize">
 
-            <TextView
-                android:id="@+id/artikel"
-                style="@style/text_splashscreen"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="20dp"
-                android:text="@string/artikel"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:lineHeight="18dp" />
-
-            <TextView
-                android:id="@+id/show_all"
-                style="@style/text_home"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="202dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="15dp"
-                android:text="@string/show_all"
-                android:textAlignment="viewEnd"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/artikel"
-                app:layout_constraintTop_toTopOf="parent"
-                app:lineHeight="18dp" />
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rvHome"
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:layout_marginTop="20dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/artikel"
-                tools:listitem="@layout/item_row_home">
+                android:layout_height="match_parent">
 
-            </androidx.recyclerview.widget.RecyclerView>
+                <TextView
+                    android:id="@+id/artikel"
+                    style="@style/text_splashscreen"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/artikel"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:lineHeight="18dp" />
 
-            <TextView
-                android:id="@+id/budidaya"
-                style="@style/text_splashscreen"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="20dp"
-                android:text="@string/budidaya"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/rvHome"
-                app:lineHeight="18dp" />
+                <TextView
+                    android:id="@+id/show_all"
+                    style="@style/text_home"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="202dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:text="@string/show_all"
+                    android:textAlignment="viewEnd"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/artikel"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:lineHeight="18dp" />
 
-            <TextView
-                android:id="@+id/show_all_budidaya"
-                style="@style/text_home"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="140dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="15dp"
-                android:text="@string/show_all"
-                android:textAlignment="viewEnd"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/rvHome"
-                app:lineHeight="18dp" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/artikel"
+                    tools:listitem="@layout/item_row_home">
 
-            <TextView
-                android:id="@+id/item_budidaya"
-                style="@style/text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="15dp"
-                android:text="@string/coming_soon"
-                android:textAlignment="center"
-                android:textAllCaps="false"
-                android:transitionName="nameLatinPlantHerbal"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/budidaya" />
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <TextView
+                    android:id="@+id/budidaya"
+                    style="@style/text_splashscreen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/budidaya"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/rvHome"
+                    app:lineHeight="18dp" />
+
+                <TextView
+                    android:id="@+id/show_all_budidaya"
+                    style="@style/text_home"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="140dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:text="@string/show_all"
+                    android:textAlignment="viewEnd"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/rvHome"
+                    app:lineHeight="18dp" />
+
+                <TextView
+                    android:id="@+id/item_budidaya"
+                    style="@style/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:text="@string/coming_soon"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:transitionName="nameLatinPlantHerbal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/budidaya" />
 
 
-            <TextView
-                android:id="@+id/health"
-                style="@style/text_splashscreen"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="20dp"
-                android:text="@string/health"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/item_budidaya"
-                app:lineHeight="18dp" />
+                <TextView
+                    android:id="@+id/health"
+                    style="@style/text_splashscreen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/health"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/item_budidaya"
+                    app:lineHeight="18dp" />
 
-            <TextView
-                android:id="@+id/show_all_health"
-                style="@style/text_home"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="140dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="15dp"
-                android:text="@string/show_all"
-                android:textAlignment="viewEnd"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/item_budidaya"
-                app:lineHeight="18dp" />
+                <TextView
+                    android:id="@+id/show_all_health"
+                    style="@style/text_home"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="140dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:text="@string/show_all"
+                    android:textAlignment="viewEnd"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/item_budidaya"
+                    app:lineHeight="18dp" />
 
-            <TextView
-                android:id="@+id/item_health"
-                style="@style/text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="15dp"
-                android:text="@string/coming_soon"
-                android:textAlignment="center"
-                android:textAllCaps="false"
-                android:transitionName="nameLatinPlantHerbal"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/health" />
+                <TextView
+                    android:id="@+id/item_health"
+                    style="@style/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:text="@string/coming_soon"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:transitionName="nameLatinPlantHerbal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/health" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="30dp" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="40dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/item_health" />
 
-    </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

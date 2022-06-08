@@ -88,16 +88,16 @@
         <entry key="..\:/android/paranmo/app/src/main/res/font/font.xml" value="0.21666666666666667" />
         <entry key="..\:/android/paranmo/app/src/main/res/layout-v23/item_product_discount.xml" value="0.19114583333333332" />
         <entry key="..\:/android/paranmo/app/src/main/res/layout-v26/activity_on_boarding.xml" value="0.1621376811594203" />
-        <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_add_plant.xml" value="0.33" />
+        <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_add_plant.xml" value="0.11235955056179775" />
         <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_camera.xml" value="0.25" />
         <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_camera_identifikasi.xml" value="0.1" />
-        <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_detail_plant.xml" value="0.25280898876404495" />
+        <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_detail_plant.xml" value="0.15748031496062992" />
         <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_detail_plant_identification.xml" value="0.25" />
-        <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_detail_product.xml" value="0.33" />
+        <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_detail_product.xml" value="0.22" />
         <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_favorit.xml" value="0.2" />
         <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_informasi_aplikasi.xml" value="0.11904761904761904" />
         <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_login.xml" value="0.14814814814814814" />
-        <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_notifikasi.xml" value="0.22" />
         <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_on_boarding.xml" value="0.25" />
         <entry key="..\:/android/paranmo/app/src/main/res/layout/activity_pendaftaran_akun.xml" value="0.1593625498007968" />
@@ -131,7 +131,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.5" />
+        <option name="scale" value="0.22" />
       </ProjectState>
     </option>
   </component>

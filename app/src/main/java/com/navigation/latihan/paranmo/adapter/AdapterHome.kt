@@ -10,6 +10,7 @@ import androidx.core.util.Pair
 import androidx.core.view.PointerIconCompat.load
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.resource.bitmap.CenterCrop
 import com.bumptech.glide.load.resource.bitmap.CenterInside
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 import com.navigation.latihan.paranmo.R
@@ -45,7 +46,7 @@ class AdapterHome : RecyclerView.Adapter<AdapterHome.HomeViewHolder>() {
                     .load(dataArticle.photo_url)
                     .placeholder(R.drawable.ic_place_holder)
                     .error(R.drawable.ic_broken_image)
-                    .transform(CenterInside() , RoundedCorners(20))
+                    .transform(CenterCrop() , RoundedCorners(20))
                     .into(photo)
 
                 plant.text = dataArticle.plant_name

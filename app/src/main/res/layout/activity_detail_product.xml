@@ -310,11 +310,10 @@
                                         <TextView
                                             android:id="@+id/starInsight"
                                             style="@style/text_location"
-                                            android:layout_width="0dp"
+                                            android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:layout_marginStart="5dp"
                                             android:layout_marginTop="5dp"
-                                            android:layout_marginEnd="15dp"
                                             android:layout_marginBottom="5dp"
                                             android:textAllCaps="false"
                                             android:transitionName="name"
@@ -356,11 +355,10 @@
                                         <TextView
                                             android:id="@+id/timeBooking"
                                             style="@style/text_location"
-                                            android:layout_width="0dp"
+                                            android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:layout_marginStart="5dp"
                                             android:layout_marginTop="5dp"
-                                            android:layout_marginEnd="15dp"
                                             android:layout_marginBottom="5dp"
                                             android:textAllCaps="false"
                                             android:transitionName="name"
@@ -822,7 +820,7 @@
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/cart"
                         style="@style/text_button_cart"
-                        android:layout_width="0dp"
+                        android:layout_width="160dp"
                         android:layout_height="50dp"
                         android:layout_marginEnd="15dp"
                         android:height="56dp"
@@ -839,7 +837,7 @@
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/buy"
                         style="@style/text_button_buy"
-                        android:layout_width="0dp"
+                        android:layout_width="160dp"
                         android:layout_height="50dp"
                         android:layout_marginEnd="10dp"
                         android:background="@drawable/stroke"
@@ -859,12 +857,12 @@
                         android:layout_marginEnd="10dp"
                         android:background="@drawable/stroke"
                         android:drawableStart="@drawable/ic_round_chat_bubble_24"
-                        android:paddingStart="18dp"
-                        android:paddingEnd="40dp"
+                        android:padding="14dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/buy"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="RtlSymmetry" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </com.google.android.material.card.MaterialCardView>

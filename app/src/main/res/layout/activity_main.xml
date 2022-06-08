@@ -12,11 +12,9 @@
         android:id="@+id/fragmentContainerView"
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-
-        android:layout_marginBottom="10dp"
+        android:layout_height="match_parent"
         app:defaultNavHost="true"
-        app:layout_constraintBottom_toTopOf="@id/coordinator"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -26,10 +24,8 @@
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/coordinator"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="640dp"
-
-        android:background="@color/primary_10"
+        android:layout_height="85dp"
+        android:background="@drawable/transparant_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,7 +38,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:background="@color/primary_10"
-            app:fabCradleMargin="15dp"
+            app:fabCradleMargin="10dp"
             app:fabCradleRoundedCornerRadius="10dp"
             app:fabCradleVerticalOffset="0dp">
 
@@ -51,8 +47,8 @@
                 android:id="@+id/bottomNav"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginEnd="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
                 android:background="@drawable/transparant_background"
                 app:itemIconSize="30dp"
                 app:itemIconTint="@drawable/nav_on"
@@ -75,48 +71,52 @@
             app:borderWidth="0dp"
             app:fabSize="normal"
             app:layout_anchor="@id/bottomAppbar"
-            app:maxImageSize="45dp" />
-
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fab_scan"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right|top|center"
-            android:clickable="true"
-            android:contentDescription="@string/todo"
-            android:focusable="true"
-            android:src="@drawable/ic_round_motion_photos_on_24"
-            android:visibility="invisible"
-            app:backgroundTint="@color/accents_60"
-            app:borderWidth="0dp"
-            app:fabSize="normal"
-            app:layout_anchor="@+id/fab_add"
-            app:layout_anchorGravity="right|top|center"
-            app:maxImageSize="35dp"
-            tools:ignore="RtlHardcoded" />
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fab_create"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="left|top|center"
-            android:clickable="true"
-            android:contentDescription="@string/todo"
-            android:focusable="true"
-            android:src="@drawable/ic_round_create_24"
-            android:visibility="invisible"
-            app:backgroundTint="@color/accents_60"
-            app:borderWidth="0dp"
-            app:fabSize="normal"
-            app:layout_anchor="@+id/fab_add"
-            app:layout_anchorGravity="left|top|center"
-            app:maxImageSize="35dp"
-            tools:ignore="RtlHardcoded" />
+            app:maxImageSize="45dp"
+            tools:ignore="DuplicateSpeakableTextCheck,ImageContrastCheck" />
 
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="40dp"
+        android:clickable="true"
+        android:contentDescription="@string/todo"
+        android:focusable="true"
+        android:src="@drawable/ic_round_motion_photos_on_24"
+        android:visibility="invisible"
+        app:backgroundTint="@color/accents_60"
+        app:borderWidth="0dp"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toTopOf="@+id/coordinator"
+        app:layout_constraintEnd_toStartOf="@+id/fab_create"
+        app:layout_constraintStart_toStartOf="parent"
+        app:maxImageSize="35dp"
+        tools:ignore="MissingConstraints,RtlHardcoded" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="130dp"
+        android:clickable="true"
+        android:contentDescription="@string/todo"
+        android:focusable="true"
+        android:src="@drawable/ic_round_create_24"
+        android:visibility="invisible"
+        app:backgroundTint="@color/accents_60"
+        app:borderWidth="0dp"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toTopOf="@+id/coordinator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fab_scan"
+        app:layout_constraintTop_toTopOf="@+id/fab_scan"
+        app:maxImageSize="35dp"
+        tools:ignore="MissingConstraints,RtlHardcoded" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
