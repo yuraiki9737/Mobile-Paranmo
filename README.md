@@ -36,13 +36,10 @@ Link: [Paranmo UI Design and Prototyping](https://www.figma.com/file/WSywggoZMSM
 The usability testing was done to test the prototype tha have has made before. We did the usability testing by using Maze. After spreading the Maze link to a lot of UI/UX and other groups, we gained 114 testers in total. We gained a lot of feedbacks.
 
 For the usability testing gained from Maze, here is the link:
-Link: [Paranmo Usability Testing](https://app.maze.co/report/1h23kl30byj8w/#60ce3f16-feed-4946-802c-9d712b2d7be5-90108673)
+Link: [Paranmo Usability Testing Maze Report](https://app.maze.co/report/1h23kl30byj8w/#60ce3f16-feed-4946-802c-9d712b2d7be5-90108673)
 
 After that, we classified the answeres to ease the development process.
-Link: [Paranmo Usability Testing](https://docs.google.com/spreadsheets/d/1_rli_ckrMNGN73SQ4jWpaN9ind6CoOkTp0ft-ajQ-1c/edit?usp=sharing)
+Link: [Paranmo Usability Testing Problem Classification](https://docs.google.com/spreadsheets/d/1_rli_ckrMNGN73SQ4jWpaN9ind6CoOkTp0ft-ajQ-1c/edit?usp=sharing)
 
 ## Developing and Integrating
-In this step, we develop the application by integrating all of the technology aspects (Mobile Development, Machine Learning, and Cloud Computing).
-
-## Testing
-This application is still in the beta version. Futher development for some features will soon be launched.
+In this step, we develop the application by integrating all of the technology aspects (Mobile Development, Machine Learning, and Cloud Computing). This application is still in the beta version. Futher development for some features will soon be launched.
