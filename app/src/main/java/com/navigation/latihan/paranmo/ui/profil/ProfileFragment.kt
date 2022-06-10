@@ -21,24 +21,20 @@ import com.navigation.latihan.paranmo.ui.akun.login.LoginActivity
 import com.navigation.latihan.paranmo.ui.profil.informasiaplikasi.InformasiAplikasiActivity
 
 
-
 private val Context.dataStoreParanmo: DataStore<Preferences> by preferencesDataStore("paranmo")
+
 class ProfileFragment : Fragment() {
 
 
     private var _bindingProfile: FragmentProfileBinding? = null
     private val bindingProfile get() = _bindingProfile
 
-    private lateinit var profile : HomeViewModel
+    private lateinit var profile: HomeViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setHasOptionsMenu(true)
-
-
-
-
-        }
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -47,7 +43,7 @@ class ProfileFragment : Fragment() {
         // Inflate the layout for this fragment
         _bindingProfile = FragmentProfileBinding.inflate(layoutInflater, container, false)
         bindingButton()
-
+        setingModel()
         return bindingProfile?.root
 
     }
@@ -75,70 +71,47 @@ class ProfileFragment : Fragment() {
 
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        val preferences = PreferenceAkunParanmo.getInstanceParanmoApp(requireContext().dataStoreParanmo )
-        profile = ViewModelProvider(
-            this, FactoryViewModel(preferences)
-        )[HomeViewModel::class.java]
-
-        loadingSetting(true)
-        profile.getUserParanmo().observe(requireActivity()) { user ->
-            if (!user.isLogin) {
-
-                bindingProfile?.photoProfile?.setBackgroundResource(R.drawable.logo5_13_14350)
-                bindingProfile?.account?.text = user.name
-            }
+    private fun loadingSetting(state: Boolean) {
+        if (state) {
+            bindingProfile?.progressLogout?.visibility = View.VISIBLE
+        } else {
+            bindingProfile?.progressLogout?.visibility = View.GONE
         }
+    }
+
+    private fun bindingButton() {
+        bindingProfile?.btnInsight?.setOnClickListener {
+            Toast.makeText(requireContext(), getString(R.string.coming_soon), Toast.LENGTH_SHORT)
+                .show()
+        }
+
         bindingProfile?.btnLogout?.setOnClickListener {
             profile.logout()
             requireActivity().finish()
-
-            setingModel()
         }
-    }
 
 
-
-
-    private fun loadingSetting(state:Boolean){
-        if (state){
-            bindingProfile?.progressLogout?.visibility = View.VISIBLE
-        }else{
-            bindingProfile?.progressLogout?.visibility=View.GONE
+        bindingProfile?.lock1?.setOnClickListener {
+            Toast.makeText(requireContext(), getString(R.string.coming_soon), Toast.LENGTH_SHORT)
+                .show()
         }
-    }
-
-    private fun bindingButton(){
-        bindingProfile?.btnInsight?.setOnClickListener {
-            Toast.makeText(requireContext(), getString(R.string.coming_soon), Toast.LENGTH_SHORT).show()
-        }
-        bindingProfile?.iconNext?.setOnClickListener {
-            Toast.makeText(requireContext(), getString(R.string.coming_soon), Toast.LENGTH_SHORT).show()
-        }
-        bindingProfile?.iconNextDetail?.setOnClickListener {
-            Toast.makeText(requireContext(), getString(R.string.coming_soon), Toast.LENGTH_SHORT).show()
-        }
-       bindingProfile?.iconCreate?.setOnClickListener {
-           Toast.makeText(requireContext(), getString(R.string.coming_soon), Toast.LENGTH_SHORT).show()
-       }
         bindingProfile?.lock2?.setOnClickListener {
-            Toast.makeText(requireContext(), getString(R.string.coming_soon), Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(), getString(R.string.coming_soon), Toast.LENGTH_SHORT)
+                .show()
         }
         bindingProfile?.btnParanmo?.setOnClickListener {
-            val intent = Intent(requireActivity() , InformasiAplikasiActivity::class.java)
+            val intent = Intent(requireActivity(), InformasiAplikasiActivity::class.java)
             startActivity(intent)
         }
         bindingProfile?.btnSyarat?.setOnClickListener {
 
-        Toast.makeText(requireContext(), getString(R.string.coming_soon), Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(), getString(R.string.coming_soon), Toast.LENGTH_SHORT)
+                .show()
         }
         bindingProfile?.btnKebijakan?.setOnClickListener {
-            Toast.makeText(requireContext(), getString(R.string.coming_soon), Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(), getString(R.string.coming_soon), Toast.LENGTH_SHORT)
+                .show()
         }
-
 
     }
 }
-
-
