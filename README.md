@@ -33,11 +33,16 @@ In the prototyping process, the MD members designed the user interface of Paranm
 Link: [Paranmo UI Design and Prototyping](https://www.figma.com/file/WSywggoZMSMRCT7pOEAxmt/Paranmo?node-id=0%3A1)
 
 ## Usability Testing
-The usability testing was done to test the prototype tha have has made before. We did the usability testing by using Maze. After spreading the Maze link to a lot of UI/UX and other groups, we gained 114 testers in total. We gained a lot of feedbacks. After that, we classified the answeres to ease the development process.
+The usability testing was done to test the prototype tha have has made before. We did the usability testing by using Maze. After spreading the Maze link to a lot of UI/UX and other groups, we gained 114 testers in total. We gained a lot of feedbacks.
 
+For the usability testing gained from Maze, here is the link:
+Link: [Paranmo Usability Testing](https://app.maze.co/report/1h23kl30byj8w/#60ce3f16-feed-4946-802c-9d712b2d7be5-90108673)
+
+After that, we classified the answeres to ease the development process.
 Link: [Paranmo Usability Testing](https://docs.google.com/spreadsheets/d/1_rli_ckrMNGN73SQ4jWpaN9ind6CoOkTp0ft-ajQ-1c/edit?usp=sharing)
 
 ## Developing and Integrating
 In this step, we develop the application by integrating all of the technology aspects (Mobile Development, Machine Learning, and Cloud Computing).
 
 ## Testing
+This application is still in the beta version. Futher development for some features will soon be launched.
