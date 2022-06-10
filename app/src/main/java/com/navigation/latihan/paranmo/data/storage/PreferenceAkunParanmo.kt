@@ -8,12 +8,11 @@ import androidx.datastore.preferences.core.stringPreferencesKey
 import com.navigation.latihan.paranmo.data.response.LoginAccount
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
-
 class PreferenceAkunParanmo private constructor(private val dataStoreParanmo: DataStore<Preferences>){
 
     fun getAkunParanmo(): Flow<LoginAccount>{
         return dataStoreParanmo.data.map {
-            preferences ->
+                preferences ->
             LoginAccount(
                 preferences[ACCOUNT_ID_KEY]?:"",
                 preferences[ACCOUNT_NAMA_KEY]?:"",

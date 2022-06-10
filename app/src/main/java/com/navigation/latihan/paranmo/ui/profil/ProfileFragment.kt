@@ -35,23 +35,6 @@ class ProfileFragment : Fragment() {
         super.onCreate(savedInstanceState)
         setHasOptionsMenu(true)
 
-        bindingProfile?.btnLogout?.setOnClickListener {
-
-            loadingSetting(true)
-            profile.getUserParanmo().observe(requireActivity()) { user ->
-                if (!user.isLogin) {
-                    val intent = Intent(requireContext(), LoginActivity::class.java)
-                    intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-                    requireActivity().startActivity(intent)
-                    requireActivity().finish()
-
-                }
-                loadingSetting(false)
-
-
-            }
-            profile.logout()
-        }
 
 
 
@@ -63,28 +46,59 @@ class ProfileFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         _bindingProfile = FragmentProfileBinding.inflate(layoutInflater, container, false)
-
-
         bindingButton()
-
-
 
         return bindingProfile?.root
 
     }
 
+
+    private fun setingModel() {
+        val preferences =
+            PreferenceAkunParanmo.getInstanceParanmoApp(requireContext().dataStoreParanmo)
+        profile = ViewModelProvider(
+            this, FactoryViewModel(preferences)
+        )[HomeViewModel::class.java]
+        loadingSetting(true)
+        profile.getUserParanmo().observe(requireActivity()) { user ->
+            if (!user.isLogin) {
+                val intent = Intent(requireContext(), LoginActivity::class.java)
+                intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                requireActivity().startActivity(intent)
+                requireActivity().finish()
+
+            }
+            loadingSetting(false)
+
+
+        }
+
+    }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         val preferences = PreferenceAkunParanmo.getInstanceParanmoApp(requireContext().dataStoreParanmo )
         profile = ViewModelProvider(
             this, FactoryViewModel(preferences)
         )[HomeViewModel::class.java]
 
+        loadingSetting(true)
+        profile.getUserParanmo().observe(requireActivity()) { user ->
+            if (!user.isLogin) {
 
+                bindingProfile?.photoProfile?.setBackgroundResource(R.drawable.logo5_13_14350)
+                bindingProfile?.account?.text = user.name
+            }
+        }
+        bindingProfile?.btnLogout?.setOnClickListener {
+            profile.logout()
+            requireActivity().finish()
 
-
+            setingModel()
+        }
     }
+
+
 
 
     private fun loadingSetting(state:Boolean){
@@ -99,11 +113,15 @@ class ProfileFragment : Fragment() {
         bindingProfile?.btnInsight?.setOnClickListener {
             Toast.makeText(requireContext(), getString(R.string.coming_soon), Toast.LENGTH_SHORT).show()
         }
-
-
-        bindingProfile?.lock1?.setOnClickListener {
+        bindingProfile?.iconNext?.setOnClickListener {
             Toast.makeText(requireContext(), getString(R.string.coming_soon), Toast.LENGTH_SHORT).show()
         }
+        bindingProfile?.iconNextDetail?.setOnClickListener {
+            Toast.makeText(requireContext(), getString(R.string.coming_soon), Toast.LENGTH_SHORT).show()
+        }
+       bindingProfile?.iconCreate?.setOnClickListener {
+           Toast.makeText(requireContext(), getString(R.string.coming_soon), Toast.LENGTH_SHORT).show()
+       }
         bindingProfile?.lock2?.setOnClickListener {
             Toast.makeText(requireContext(), getString(R.string.coming_soon), Toast.LENGTH_SHORT).show()
         }
@@ -118,6 +136,7 @@ class ProfileFragment : Fragment() {
         bindingProfile?.btnKebijakan?.setOnClickListener {
             Toast.makeText(requireContext(), getString(R.string.coming_soon), Toast.LENGTH_SHORT).show()
         }
+
 
     }
 }

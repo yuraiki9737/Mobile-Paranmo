@@ -31,7 +31,8 @@
             android:exported="false" />
         <activity
             android:name=".ui.MainActivity"
-            android:exported="false">
+            android:exported="false"
+            android:theme="@style/Theme.Paranmo">
         </activity>
         <activity
             android:name=".ui.identifikasitanaman.cameraidentifikasi.CameraIdentifikasiActivity"
@@ -106,6 +107,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
 
         <provider

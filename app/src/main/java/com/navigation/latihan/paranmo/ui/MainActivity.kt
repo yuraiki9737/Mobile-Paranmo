@@ -13,7 +13,6 @@ import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.navigation.latihan.paranmo.R
 import com.navigation.latihan.paranmo.databinding.ActivityMainBinding
-import com.navigation.latihan.paranmo.ui.identifikasitanaman.cameraidentifikasi.CameraIdentifikasiActivity
 import com.navigation.latihan.paranmo.ui.identifikasitanaman.resultidentifikasi.ResultIdentifikasiActivity
 import com.navigation.latihan.paranmo.ui.profil.addplant.AddPlantActivity
 

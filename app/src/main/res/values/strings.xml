@@ -89,7 +89,7 @@
     <string name="info">Perhatian</string>
     <string name="description_info">sebelum melakukan identifikasi tanaman herbal ada beberapa yang harus di perhatikan untuk mendapatkan akurasi yang sesuai</string>
     <string name="text_info">1. Kamera dan objek maupun itu tanaman atau gambar minimal jarak 10cm\n\n 2. Jika identifikasi menggunakan gambar, maka kualitas gambar harus tetap terjaga dan tidak menurun resolusi gambar maupun ketajaman gambar</string>
-    <string name="use">Cara penggunaan</string>
+    <string name="text_info_1"><b>Maaf fitur paracam masih belum tahap sempurna, ada beberapa fitur yang masih belum di develop dengan baik seperti : \n\n - memberikan label "None" apabila pengguna mengscan objek yang tidak ada didalam dataset system\n\n- membuat fitur daftar list identifikasi berdasarkan akurasi yang sudah ditentukan\n\n Kami akan terus mengembangkan fitur lebih lanjut</b></string>
     <string name="plant_use">Proses</string>
     <string name="final_use">Hasil</string>
     <string name="info_use">Catatan apabila pada saat hasil identifikasi system menampilkan hasil <b>"None"</b> maka hasil tersebut tidak ada di dataset system kami</string>
@@ -147,6 +147,13 @@
     <string name="buy">Beli Sekarang</string>
     <string name="cart">Keranjang</string>
     <string name="articel_other">Artikel Lainnya</string>
+    <string name="account">Akun Saya</string>
+    <string name="handphone">nomor handphone</string>
+    <string name="null_phone">-</string>
+    <string name="saldo"><![CDATA[Saldo & Point]]></string>
+    <string name="member">Member Perunggu</string>
+    <string name="premium">Paranmo Premium</string>
+    <string name="use">Cara Penggunaan</string>
 
 
     <!-- Discount -->
