@@ -45,11 +45,14 @@
             <TextView
                 android:id="@+id/textView"
                 style="@style/text_splashscreen"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="15dp"
                 android:text="@string/notif_bar"
+                android:textAlignment="viewStart"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/back_notification"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -57,14 +60,16 @@
             <TextView
                 android:id="@+id/read"
                 style="@style/text_read"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
+                android:layout_marginStart="15dp"
                 android:layout_marginEnd="15dp"
                 android:text="@string/read"
                 android:textAlignment="viewEnd"
+                app:layout_constraintBottom_toBottomOf="@+id/textView"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView"
                 tools:ignore="MissingConstraints" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -136,9 +141,9 @@
                             <TextView
                                 android:id="@+id/textView7"
                                 style="@style/text_title_notif_off"
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="15dp"
+                                android:layout_marginStart="90dp"
                                 android:layout_marginTop="10dp"
                                 android:layout_marginEnd="15dp"
                                 android:text="@string/notif_scan"
@@ -149,9 +154,9 @@
 
                             <TextView
                                 style="@style/text_notif_off"
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="15dp"
+                                android:layout_marginStart="90dp"
                                 android:layout_marginTop="8dp"
                                 android:layout_marginEnd="15dp"
                                 android:layout_marginBottom="10dp"
@@ -211,11 +216,10 @@
                         <TextView
                             android:id="@+id/textView2"
                             style="@style/text_title_notif"
-                            android:layout_width="0dp"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="15dp"
+                            android:layout_marginStart="90dp"
                             android:layout_marginTop="10dp"
-                            android:layout_marginEnd="15dp"
                             android:text="@string/notif_article"
                             android:textAlignment="viewStart"
                             app:layout_constraintEnd_toEndOf="parent"
@@ -224,9 +228,9 @@
 
                         <TextView
                             style="@style/text_notif"
-                            android:layout_width="0dp"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="15dp"
+                            android:layout_marginStart="90dp"
                             android:layout_marginTop="8dp"
                             android:layout_marginEnd="15dp"
                             android:layout_marginBottom="10dp"
@@ -286,9 +290,9 @@
                         <TextView
                             android:id="@+id/textView3"
                             style="@style/text_title_notif"
-                            android:layout_width="0dp"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="15dp"
+                            android:layout_marginStart="90dp"
                             android:layout_marginTop="10dp"
                             android:layout_marginEnd="15dp"
                             android:text="@string/notif_paranmo"
@@ -299,9 +303,9 @@
 
                         <TextView
                             style="@style/text_notif"
-                            android:layout_width="0dp"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="15dp"
+                            android:layout_marginStart="90dp"
                             android:layout_marginTop="8dp"
                             android:layout_marginEnd="15dp"
                             android:layout_marginBottom="10dp"
@@ -360,9 +364,9 @@
                         <TextView
                             android:id="@+id/textView4"
                             style="@style/text_title_notif"
-                            android:layout_width="0dp"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="15dp"
+                            android:layout_marginStart="90dp"
                             android:layout_marginTop="10dp"
                             android:layout_marginEnd="15dp"
                             android:text="@string/notif_paranmo_scan"
@@ -373,9 +377,9 @@
 
                         <TextView
                             style="@style/text_notif"
-                            android:layout_width="0dp"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="15dp"
+                            android:layout_marginStart="90dp"
                             android:layout_marginTop="8dp"
                             android:layout_marginEnd="15dp"
                             android:layout_marginBottom="10dp"
@@ -437,9 +441,9 @@
                         <TextView
                             android:id="@+id/textView2_off"
                             style="@style/text_title_notif_off"
-                            android:layout_width="0dp"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="15dp"
+                            android:layout_marginStart="90dp"
                             android:layout_marginTop="10dp"
                             android:layout_marginEnd="15dp"
                             android:text="@string/notif_article"
@@ -450,9 +454,9 @@
 
                         <TextView
                             style="@style/text_notif_off"
-                            android:layout_width="0dp"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="15dp"
+                            android:layout_marginStart="90dp"
                             android:layout_marginTop="8dp"
                             android:layout_marginEnd="15dp"
                             android:layout_marginBottom="10dp"
@@ -513,9 +517,9 @@
                         <TextView
                             android:id="@+id/textView3_off"
                             style="@style/text_title_notif_off"
-                            android:layout_width="0dp"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="15dp"
+                            android:layout_marginStart="90dp"
                             android:layout_marginTop="10dp"
                             android:layout_marginEnd="15dp"
                             android:text="@string/notif_paranmo"
@@ -526,9 +530,9 @@
 
                         <TextView
                             style="@style/text_notif_off"
-                            android:layout_width="0dp"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="15dp"
+                            android:layout_marginStart="90dp"
                             android:layout_marginTop="8dp"
                             android:layout_marginEnd="15dp"
                             android:layout_marginBottom="10dp"
@@ -588,9 +592,9 @@
                         <TextView
                             android:id="@+id/textView4_off"
                             style="@style/text_title_notif_off"
-                            android:layout_width="0dp"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="15dp"
+                            android:layout_marginStart="90dp"
                             android:layout_marginTop="10dp"
                             android:layout_marginEnd="15dp"
                             android:text="@string/notif_paranmo_scan"
@@ -601,9 +605,9 @@
 
                         <TextView
                             style="@style/text_notif_off"
-                            android:layout_width="0dp"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="15dp"
+                            android:layout_marginStart="90dp"
                             android:layout_marginTop="8dp"
                             android:layout_marginEnd="15dp"
                             android:layout_marginBottom="10dp"

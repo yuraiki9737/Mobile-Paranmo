@@ -10,15 +10,15 @@
     <TextView
         android:id="@+id/textView10"
         style="@style/text_header_login"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="55dp"
-        android:layout_marginEnd="105dp"
+        android:layout_marginEnd="15dp"
         android:layout_marginBottom="20dp"
         android:text="@string/daftarAkun"
         android:textAlignment="viewStart"
-        app:layout_constraintBottom_toTopOf="@+id/frameLayout3"
+        app:layout_constraintBottom_toTopOf="@+id/frame_daftar"
         app:layout_constraintEnd_toStartOf="@+id/view14"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view3" />
@@ -50,7 +50,7 @@
         tools:ignore="MissingConstraints" />
 
     <FrameLayout
-        android:id="@+id/frameLayout3"
+        android:id="@+id/frame_daftar"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="222dp"
@@ -83,6 +83,21 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
+                        <ImageView
+                            android:id="@+id/back"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="25dp"
+                            android:contentDescription="@string/todo"
+                            android:paddingStart="0dp"
+                            android:paddingTop="0dp"
+                            android:paddingBottom="0dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/ic_round_arrow_back_ios_24"
+                            tools:ignore="RtlSymmetry" />
+
                         <androidx.appcompat.widget.AppCompatButton
                             android:id="@+id/button_daftar_akun"
                             style="@style/text_button_daftar_akun"
@@ -105,7 +120,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="start"
                             android:layout_marginStart="15dp"
-                            android:layout_marginTop="50dp"
+                            android:layout_marginTop="20dp"
                             android:layout_marginEnd="15dp"
                             android:hint="@string/name"
                             android:inputType="textPersonName"
@@ -114,7 +129,7 @@
                             android:paddingEnd="16sp"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/back"
                             tools:ignore="MissingConstraints" />
 
                         <com.navigation.latihan.paranmo.ui.customview.CustomViewEmail

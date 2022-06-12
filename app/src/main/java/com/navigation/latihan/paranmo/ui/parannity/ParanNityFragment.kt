@@ -1,60 +1,105 @@
 package com.navigation.latihan.paranmo.ui.parannity
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.navigation.latihan.paranmo.R
+import com.navigation.latihan.paranmo.adapter.ListParanNityAdapter
+import com.navigation.latihan.paranmo.data.ParanNity
+import com.navigation.latihan.paranmo.databinding.FragmentParanNityBinding
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [ParanNityFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class ParanNityFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+
+    private var _bindingParanNity: FragmentParanNityBinding? = null
+    private val bindingParanNity get() =  _bindingParanNity
+
+    private val listParan = ArrayList<ParanNity>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
+        setHasOptionsMenu(true)
     }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_paran_nity, container, false)
+        _bindingParanNity = FragmentParanNityBinding.inflate(layoutInflater, container, false)
+
+        bindingButton()
+        return bindingParanNity?.root!!
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment ParanNityFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            ParanNityFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+    private fun bindingButton() {
+        bindingParanNity?.menu?.setOnClickListener {
+            Toast.makeText(requireContext(), getString(R.string.coming_soon), Toast.LENGTH_SHORT).show()
+        }
+        bindingParanNity?.chat?.setOnClickListener {
+            Toast.makeText(requireContext(), getString(R.string.coming_soon), Toast.LENGTH_SHORT).show()
+        }
+        bindingParanNity?.addPerson?.setOnClickListener {
+            Toast.makeText(requireContext(), getString(R.string.coming_soon), Toast.LENGTH_SHORT).show()
+        }
+        bindingParanNity?.search?.setOnClickListener {
+            Toast.makeText(requireContext(), getString(R.string.coming_soon), Toast.LENGTH_SHORT).show()
+        }
     }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        bindingParanNity?.rvParan?.setHasFixedSize(true)
+
+        listParan.addAll(paranNity)
+        showRecyclerList()
+
+    }
+
+    private val paranNity:ArrayList<ParanNity>
+        @SuppressLint("Recycle")
+        get() {
+            val photo = resources.obtainTypedArray(R.array.photo)
+            val name = resources.getStringArray(R.array.name)
+            val date = resources.getStringArray(R.array.date)
+            val image = resources.obtainTypedArray(R.array.image)
+            val like = resources.getStringArray(R.array.like)
+            val comment = resources.getStringArray(R.array.comment)
+            val share = resources.getStringArray(R.array.share)
+
+
+            val listParan = ArrayList<ParanNity>()
+            for (i in name.indices){
+                val paranNity = ParanNity(
+                    photo.getResourceId(i, -1),
+                    name [i],
+                    date[i],
+                    image.getResourceId(i,-1),
+                    like[i],
+                    comment[i],
+                    share[i],
+
+
+
+                )
+                listParan.add(paranNity)
+
+            }
+            return listParan
+        }
+    private fun showRecyclerList() {
+        bindingParanNity?.rvParan?.layoutManager = LinearLayoutManager(requireContext())
+        val listParanNityAdapter = ListParanNityAdapter(listParan)
+        bindingParanNity?.rvParan?.adapter = listParanNityAdapter
+
+    }
+
+
+
 }

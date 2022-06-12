@@ -9,7 +9,7 @@ android {
     compileSdk 32
 
     defaultConfig {
-        buildConfigField "String", "API_PARANMO", '"http://34.101.86.196/API/"'
+        buildConfigField "String", "API_PARANMO", '"http://35.192.159.34/API/"'
         applicationId "com.navigation.latihan.paranmo"
         minSdk 21
         targetSdk 32
@@ -33,8 +33,10 @@ android {
         jvmTarget = '1.8'
     }
 
+    viewBinding{
+        enabled true
+    }
     buildFeatures {
-        viewBinding true
         mlModelBinding true
     }
 }

@@ -16,12 +16,12 @@ import com.bumptech.glide.Glide
 import com.navigation.latihan.paranmo.R
 import com.navigation.latihan.paranmo.data.Article
 import com.navigation.latihan.paranmo.data.storage.PreferenceAkunParanmo
-import com.navigation.latihan.paranmo.databinding.ActivityDetailPlantBinding
 import com.navigation.latihan.paranmo.model.FactoryViewModel
 import com.navigation.latihan.paranmo.model.HomeViewModel
 import com.navigation.latihan.paranmo.ui.MainActivity
 import com.navigation.latihan.paranmo.adapter.AdapterHome.Companion.DATA_ARTICLE
 import com.navigation.latihan.paranmo.adapter.AdapterHomeFragment
+import com.navigation.latihan.paranmo.databinding.ActivityDetailPlantBinding
 import com.navigation.latihan.paranmo.ui.home.result.ResultActivity
 
 
@@ -48,8 +48,11 @@ class DetailPlantActivity : AppCompatActivity() {
         binding.namePlantHerbal.text = detailPlant.plant_name
         binding.nameLatinPlantHerbal.text = detailPlant.latin_name
         binding.namePerson.text = detailPlant.name
+        binding.benefitPlantHerbal.text = detailPlant.benefit
         binding.descriptionPlantHerbal.text = detailPlant.description
+        binding.tutorialPlantHerbal.text = detailPlant.how_to_use
         binding.date.text = detailPlant.createdAt
+
 
         Glide.with(this)
             .load(detailPlant.photo_url)

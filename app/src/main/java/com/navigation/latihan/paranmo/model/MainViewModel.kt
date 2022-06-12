@@ -12,7 +12,7 @@ class MainViewModel (private val preferenceAkunParanmo: PreferenceAkunParanmo) :
 
     fun saveParanmoApp(loginAkun: LoginAccount){
         viewModelScope.launch {
-            preferenceAkunParanmo.saveAkunParanmo(LoginAccount(loginAkun.id, loginAkun.name, loginAkun.token,loginAkun.isLogin  ))
+            preferenceAkunParanmo.saveAkunParanmo(LoginAccount(loginAkun.id, loginAkun.name,loginAkun.email,loginAkun.token,loginAkun.isLogin  ))
         }
     }
 

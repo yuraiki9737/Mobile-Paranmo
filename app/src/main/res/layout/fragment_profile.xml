@@ -94,9 +94,9 @@
                     <TextView
                         android:id="@+id/account"
                         style="@style/text_account"
-                        android:layout_width="0dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="15dp"
+                        android:layout_marginStart="100dp"
                         android:layout_marginEnd="15dp"
                         android:layout_marginBottom="5dp"
                         android:ellipsize="end"
@@ -111,30 +111,34 @@
                     <TextView
                         android:id="@+id/numberHandphone"
                         style="@style/text_info"
-                        android:layout_width="0dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="100dp"
                         android:layout_marginTop="5dp"
+                        android:layout_marginEnd="15dp"
                         android:layout_marginBottom="5dp"
                         android:ellipsize="end"
                         android:text="@string/null_phone"
                         android:textAlignment="viewStart"
                         app:layout_constraintBottom_toTopOf="@+id/email"
-                        app:layout_constraintEnd_toEndOf="@+id/account"
-                        app:layout_constraintStart_toStartOf="@+id/account"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/photoProfile"
                         app:layout_constraintTop_toBottomOf="@+id/account"
                         tools:ignore="RtlHardcoded" />
 
                     <TextView
                         android:id="@+id/email"
                         style="@style/text_info"
-                        android:layout_width="0dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="100dp"
                         android:layout_marginTop="5dp"
+                        android:layout_marginEnd="15dp"
                         android:ellipsize="end"
                         android:textAlignment="viewStart"
                         app:layout_constraintBottom_toBottomOf="@+id/photoProfile"
-                        app:layout_constraintEnd_toEndOf="@+id/numberHandphone"
-                        app:layout_constraintStart_toStartOf="@+id/numberHandphone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/photoProfile"
                         app:layout_constraintTop_toBottomOf="@+id/numberHandphone"
                         tools:ignore="RtlHardcoded"
                         tools:text="@string/email" />
@@ -142,7 +146,7 @@
                     <TextView
                         android:id="@+id/saldo_point"
                         style="@style/text_title_account"
-                        android:layout_width="0dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="15dp"
                         android:layout_marginTop="20dp"
@@ -220,12 +224,10 @@
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
                                 android:layout_marginStart="15dp"
-                                android:layout_marginEnd="5dp"
                                 android:background="@drawable/ic_jam_medal"
                                 android:contentDescription="@string/todo"
                                 android:textAlignment="center"
                                 app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toStartOf="@+id/text_member"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -233,30 +235,29 @@
                                 android:id="@+id/icon_next"
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
-                                android:layout_marginStart="50dp"
                                 android:layout_marginEnd="15dp"
                                 android:background="@drawable/ic_round_arrow_forward_ios_24_green"
                                 android:contentDescription="@string/todo"
                                 android:textAlignment="center"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toEndOf="@+id/text_member"
-                                app:layout_constraintTop_toTopOf="parent" />
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.0" />
 
                             <TextView
                                 android:id="@+id/text_member"
                                 style="@style/text_title_account"
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="5dp"
+                                android:layout_marginStart="50dp"
                                 android:layout_marginTop="5dp"
-                                android:layout_marginEnd="80dp"
+                                android:layout_marginEnd="15dp"
                                 android:layout_marginBottom="5dp"
                                 android:text="@string/member"
                                 android:textAlignment="viewStart"
                                 app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toStartOf="@+id/icon_next"
-                                app:layout_constraintStart_toEndOf="@+id/icon_member"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </FrameLayout>
@@ -281,12 +282,10 @@
                                 android:layout_width="40dp"
                                 android:layout_height="40dp"
                                 android:layout_marginStart="15dp"
-                                android:layout_marginEnd="5dp"
                                 android:background="@drawable/logo5_13_14491"
                                 android:contentDescription="@string/todo"
                                 android:textAlignment="center"
                                 app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toStartOf="@+id/text_premium"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -294,30 +293,28 @@
                                 android:id="@+id/icon_next_detail"
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
-                                android:layout_marginStart="50dp"
                                 android:layout_marginEnd="15dp"
                                 android:background="@drawable/ic_round_arrow_forward_ios_24_green"
                                 android:contentDescription="@string/todo"
                                 android:textAlignment="center"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toEndOf="@+id/text_premium"
                                 app:layout_constraintTop_toTopOf="parent" />
 
                             <TextView
                                 android:id="@+id/text_premium"
                                 style="@style/text_title_account"
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="5dp"
+                                android:layout_marginStart="60dp"
                                 android:layout_marginTop="5dp"
-                                android:layout_marginEnd="80dp"
+                                android:layout_marginEnd="15dp"
                                 android:layout_marginBottom="5dp"
                                 android:text="@string/premium"
                                 android:textAlignment="viewStart"
                                 app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toStartOf="@+id/icon_next_detail"
-                                app:layout_constraintStart_toEndOf="@+id/paranmo_premium"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </FrameLayout>
@@ -359,8 +356,10 @@
                                 android:transitionName="nameLatinPlantHerbal"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
                                 app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" />
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="1.0" />
 
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -478,26 +477,24 @@
                                 android:layout_width="25dp"
                                 android:layout_height="30dp"
                                 android:layout_marginStart="5dp"
-                                android:layout_marginEnd="10dp"
                                 android:background="@drawable/logo5_13_14491"
                                 android:contentDescription="@string/todo"
                                 android:textAlignment="center"
                                 app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toStartOf="@+id/text_paranmo"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
 
                             <TextView
                                 android:id="@+id/text_paranmo"
                                 style="@style/text"
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="10dp"
-                                android:layout_marginEnd="190dp"
+                                android:layout_marginStart="40dp"
+                                android:layout_marginEnd="15dp"
                                 android:text="@string/information_paranmo"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toEndOf="@+id/logo_paranmo"
+                                app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </FrameLayout>
@@ -523,25 +520,23 @@
                                 android:layout_width="25dp"
                                 android:layout_height="30dp"
                                 android:layout_marginStart="5dp"
-                                android:layout_marginEnd="10dp"
                                 android:background="@drawable/ic_outline_feed_24"
                                 android:contentDescription="@string/todo"
                                 app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toStartOf="@+id/text_syarat"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
 
                             <TextView
                                 android:id="@+id/text_syarat"
                                 style="@style/text"
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="10dp"
-                                android:layout_marginEnd="137dp"
+                                android:layout_marginStart="40dp"
+                                android:layout_marginEnd="15dp"
                                 android:text="@string/information_syarat"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toEndOf="@+id/icon_syarat"
+                                app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </FrameLayout>
@@ -567,25 +562,23 @@
                                 android:layout_width="25dp"
                                 android:layout_height="30dp"
                                 android:layout_marginStart="5dp"
-                                android:layout_marginEnd="10dp"
                                 android:background="@drawable/ic_outline_privacy_tip_24"
                                 android:contentDescription="@string/todo"
                                 app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toStartOf="@+id/text_kebijakan"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
 
                             <TextView
                                 android:id="@+id/text_kebijakan"
                                 style="@style/text"
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="10dp"
-                                android:layout_marginEnd="137dp"
+                                android:layout_marginStart="40dp"
+                                android:layout_marginEnd="15dp"
                                 android:text="@string/information_kebijakan"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toEndOf="@+id/icon_kebijakan"
+                                app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </FrameLayout>
@@ -610,25 +603,23 @@
                                 android:layout_width="25dp"
                                 android:layout_height="30dp"
                                 android:layout_marginStart="5dp"
-                                android:layout_marginEnd="10dp"
                                 android:background="@drawable/ic_round_insights_24"
                                 android:contentDescription="@string/todo"
                                 app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toStartOf="@+id/text_ulasan"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
 
                             <TextView
                                 android:id="@+id/text_ulasan"
                                 style="@style/text"
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="10dp"
-                                android:layout_marginEnd="131dp"
+                                android:layout_marginStart="40dp"
+                                android:layout_marginEnd="15dp"
                                 android:text="@string/information_ulasan"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toEndOf="@+id/icon_ulasan"
+                                app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </FrameLayout>
@@ -654,11 +645,9 @@
                                 android:layout_width="25dp"
                                 android:layout_height="30dp"
                                 android:layout_marginStart="5dp"
-                                android:layout_marginEnd="10dp"
                                 android:background="@drawable/ic_round_logout_24"
                                 android:contentDescription="@string/todo"
                                 app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toStartOf="@+id/text_logout"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
                                 tools:ignore="TooDeepLayout" />
@@ -666,14 +655,14 @@
                             <TextView
                                 android:id="@+id/text_logout"
                                 style="@style/text"
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="10dp"
-                                android:layout_marginEnd="187dp"
+                                android:layout_marginStart="40dp"
+                                android:layout_marginEnd="15dp"
                                 android:text="@string/logout"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toEndOf="@+id/icon_logout"
+                                app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>

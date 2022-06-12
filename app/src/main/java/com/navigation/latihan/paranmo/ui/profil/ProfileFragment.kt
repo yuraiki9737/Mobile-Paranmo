@@ -23,6 +23,7 @@ import com.navigation.latihan.paranmo.ui.profil.informasiaplikasi.InformasiAplik
 
 
 private val Context.dataStoreParanmo: DataStore<Preferences> by preferencesDataStore("paranmo")
+@Suppress("SameParameterValue")
 class ProfileFragment : Fragment() {
 
 
@@ -36,9 +37,7 @@ class ProfileFragment : Fragment() {
         setHasOptionsMenu(true)
 
 
-
-
-        }
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -48,57 +47,43 @@ class ProfileFragment : Fragment() {
         _bindingProfile = FragmentProfileBinding.inflate(layoutInflater, container, false)
         bindingButton()
 
+
         return bindingProfile?.root
 
     }
 
 
-    private fun setingModel() {
+    private fun view(){
         val preferences =
             PreferenceAkunParanmo.getInstanceParanmoApp(requireContext().dataStoreParanmo)
         profile = ViewModelProvider(
             this, FactoryViewModel(preferences)
         )[HomeViewModel::class.java]
-        loadingSetting(true)
+
         profile.getUserParanmo().observe(requireActivity()) { user ->
-            if (!user.isLogin) {
-                val intent = Intent(requireContext(), LoginActivity::class.java)
-                intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-                requireActivity().startActivity(intent)
-                requireActivity().finish()
-
+            if (user.isLogin) {
+                bindingProfile?.photoProfile?.setBackgroundResource(R.drawable.logo5_13_14350)
+                bindingProfile?.account?.text = user.name
+                bindingProfile?.email?.text = user.email
             }
-            loadingSetting(false)
-
-
         }
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val preferences = PreferenceAkunParanmo.getInstanceParanmoApp(requireContext().dataStoreParanmo )
-        profile = ViewModelProvider(
-            this, FactoryViewModel(preferences)
-        )[HomeViewModel::class.java]
 
-        loadingSetting(true)
-        profile.getUserParanmo().observe(requireActivity()) { user ->
-            if (!user.isLogin) {
+        view()
 
-                bindingProfile?.photoProfile?.setBackgroundResource(R.drawable.logo5_13_14350)
-                bindingProfile?.account?.text = user.name
-            }
-        }
         bindingProfile?.btnLogout?.setOnClickListener {
             profile.logout()
+            loadingSetting(true)
+            val intent = Intent(requireContext(), LoginActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            requireActivity().startActivity(intent)
             requireActivity().finish()
 
-            setingModel()
         }
     }
-
-
 
 
     private fun loadingSetting(state:Boolean){

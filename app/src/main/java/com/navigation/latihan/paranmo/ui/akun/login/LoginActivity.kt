@@ -80,12 +80,14 @@ class LoginActivity : AppCompatActivity() {
                         call: Call<ResponseLogin>,
                         response: Response<ResponseLogin>,
                     ) {
-                        if (response.code() == 200) {
-                            val bodyUser = response.body()?.user as LoginAccount
+                        if (response.body()!!.success==1){
+                            val responseBody = response.body()?.user as LoginAccount
 
-                            loginParanmoModel.saveParanmoApp(LoginAccount(bodyUser.id,
-                                bodyUser.name,
-                                bodyUser.token,
+                            loginParanmoModel.saveParanmoApp(LoginAccount(
+                                responseBody.id,
+                                responseBody.name,
+                                responseBody.email,
+                                responseBody.token,
                                 true))
                             binding.progressLogin.visibility = View.INVISIBLE
 

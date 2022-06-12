@@ -67,6 +67,13 @@ class ParanShopFragment : Fragment() {
         }
         bindingParanshop?.cardSearch?.setOnClickListener {
             Toast.makeText(requireContext(), getString(R.string.coming_soon), Toast.LENGTH_SHORT).show() }
+
+        bindingParanshop?.paranpayView?.setOnClickListener {
+            Toast.makeText(requireContext(), getString(R.string.coming_soon), Toast.LENGTH_SHORT).show() }
+
+        bindingParanshop?.coinView?.setOnClickListener {
+            Toast.makeText(requireContext(), getString(R.string.coming_soon), Toast.LENGTH_SHORT).show() }
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -175,9 +182,15 @@ class ParanShopFragment : Fragment() {
 
         val listDiscountAdapter = ListDiscountAdapter(listDiscount)
         bindingParanshop?.rvDiscount?.adapter = listDiscountAdapter
+        bindingParanshop?.rvDiscount?.setOnClickListener {
+            Toast.makeText(requireContext(), getString(R.string.coming_soon), Toast.LENGTH_SHORT).show()
+        }
 
         val listCategoryAdapter = ListCategoryAdapter(listCat)
         bindingParanshop?.rvCategory?.adapter = listCategoryAdapter
+        bindingParanshop?.rvCategory?.setOnClickListener {
+            Toast.makeText(requireContext(), getString(R.string.coming_soon), Toast.LENGTH_SHORT).show() }
+
 
 
 

@@ -6,6 +6,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
 import com.navigation.latihan.paranmo.api.RetrofitClient
+import com.navigation.latihan.paranmo.data.LoginUser
 import com.navigation.latihan.paranmo.data.Product
 import com.navigation.latihan.paranmo.data.response.LoginAccount
 import com.navigation.latihan.paranmo.data.response.ProductResponse
@@ -27,7 +28,7 @@ class ProductViewModel (private val preferenceAkunParanmo: PreferenceAkunParanmo
                     response: Response<ProductResponse>,
                 ) {
                    if(response.isSuccessful){
-                       productList.postValue(response.body()?.article)
+                       productList.postValue(response.body()?.product)
                    } else {
                        productList.postValue(null)
                    }
@@ -44,7 +45,7 @@ class ProductViewModel (private val preferenceAkunParanmo: PreferenceAkunParanmo
         return productList
     }
 
-    fun getUserParanmo():LiveData<LoginAccount>{
+    fun getUserParanmo(): LiveData<LoginAccount>{
         return preferenceAkunParanmo.getAkunParanmo().asLiveData()
     }
 }

@@ -89,7 +89,7 @@
     <string name="info">Perhatian</string>
     <string name="description_info">sebelum melakukan identifikasi tanaman herbal ada beberapa yang harus di perhatikan untuk mendapatkan akurasi yang sesuai</string>
     <string name="text_info">1. Kamera dan objek maupun itu tanaman atau gambar minimal jarak 10cm\n\n 2. Jika identifikasi menggunakan gambar, maka kualitas gambar harus tetap terjaga dan tidak menurun resolusi gambar maupun ketajaman gambar</string>
-    <string name="text_info_1"><b>Maaf fitur paracam masih belum tahap sempurna, ada beberapa fitur yang masih belum di develop dengan baik seperti : \n\n - memberikan label "None" apabila pengguna mengscan objek yang tidak ada didalam dataset system\n\n- membuat fitur daftar list identifikasi berdasarkan akurasi yang sudah ditentukan\n\n Kami akan terus mengembangkan fitur lebih lanjut</b></string>
+    <string name="text_info_1"><b>Maaf fitur paracam masih belum tahap sempurna, ada beberapa fitur yang masih belum di develop dengan baik seperti : \n\n - memberikan label "None" apabila pengguna mengscan objek yang tidak ada didalam dataset system\n\n- membuat fitur daftar list identifikasi berdasarkan akurasi yang sudah ditentukan\n\n- Menampilkan detail tanaman herbal berdasarkan identifikasi\n\n Kami akan terus mengembangkan fitur ini lebih lanjut</b></string>
     <string name="plant_use">Proses</string>
     <string name="final_use">Hasil</string>
     <string name="info_use">Catatan apabila pada saat hasil identifikasi system menampilkan hasil <b>"None"</b> maka hasil tersebut tidak ada di dataset system kami</string>
@@ -154,6 +154,10 @@
     <string name="member">Member Perunggu</string>
     <string name="premium">Paranmo Premium</string>
     <string name="use">Cara Penggunaan</string>
+    <string name="top_up">Isi saldo paranpay disini!</string>
+    <string name="price">Rp. 0</string>
+    <string name="coin">Klaim coin anda disini!</string>
+    <string name="parannity">ParanNity</string>
 
 
     <!-- Discount -->
@@ -202,6 +206,51 @@
     </string-array>
     <string-array name="txtCat">
         <item>Tanaman Herbal</item>
-        <item>Obat Herbal</item>
+        <item>Pengobatan Herbal</item>
     </string-array>
+
+
+    <!--Paran Nity-->
+    <string-array name="photo">
+        <item>@drawable/logo5_13_14350</item>
+        <item>@drawable/logo5_13_14350</item>
+        <item>@drawable/logo5_13_14350</item>
+    </string-array>
+
+    <string-array name="name">
+        <item>Paranmo Official</item>
+        <item>Paranmo Official</item>
+        <item>Paranmo Official</item>
+    </string-array>
+
+    <string-array name="date">
+        <item>20 Mei 2022</item>
+        <item>30 Mei 2022</item>
+        <item>2 Juni 2022</item>
+    </string-array>
+
+    <string-array name="image">
+        <item>@drawable/image</item>
+        <item>@drawable/obat_herbal</item>
+        <item>@drawable/tanaman_herbal</item>
+    </string-array>
+
+    <string-array name="like">
+        <item>20</item>
+        <item>15</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="comment">
+        <item>15</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="share">
+        <item>25</item>
+        <item>15</item>
+        <item>20</item>
+    </string-array>
+
 </resources>

@@ -17,6 +17,8 @@ class CustomViewEmail: TextInputEditText, View.OnTouchListener {
 
     private lateinit var clearEmail: Drawable
 
+    var type = ""
+
     constructor(context: Context) : super(context) {
         init()
     }
@@ -51,7 +53,7 @@ class CustomViewEmail: TextInputEditText, View.OnTouchListener {
             }
 
             override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
-                if(s.toString().isNotEmpty() && !Patterns.EMAIL_ADDRESS.matcher(s ?: "").matches()){
+                if(s.toString().isNotEmpty() && !Patterns.EMAIL_ADDRESS.matcher(s).matches()){
                     error = resources.getString(R.string.failed_email)
                 }
             }

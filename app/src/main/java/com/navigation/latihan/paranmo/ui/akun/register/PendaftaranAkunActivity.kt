@@ -29,6 +29,11 @@ class PendaftaranAkunActivity : AppCompatActivity() {
     }
 
     private fun bindingConfigure(){
+        binding.back.setOnClickListener {
+            val registrationIntentAccount = Intent(this@PendaftaranAkunActivity, LoginActivity::class.java)
+            startActivity(registrationIntentAccount)
+            finish()
+        }
         binding.buttonDaftarAkun.setOnClickListener {
 
             val emailAccountParanmo = binding.email.text.toString()
@@ -60,16 +65,17 @@ class PendaftaranAkunActivity : AppCompatActivity() {
 
     }
 
-    private fun registrationAccountParanmo() {
-        val emailAccountParanmo = binding.email.text.toString().trim()
-        val nameAccountParanmo = binding.name.text.toString().trim()
-        val passwordAccountParanmo = binding.password.text.toString().trim()
+    private fun registrationAccountParanmo(){
+        val email = binding.email.text.toString().trim()
+        val name = binding.name.text.toString().trim()
+        val password = binding.password.text.toString().trim()
+
 
         binding.progressRegister.visibility = View.VISIBLE
-        RetrofitClient().getApiParanmo().registerAkunParanmo(RegisterUser(
-            nameAccountParanmo,
-            emailAccountParanmo,
-            passwordAccountParanmo))
+        RetrofitClient().getApiParanmo().registerAkunParanmo( RegisterUser(
+            email,
+            name,
+            password))
             .enqueue(object: Callback<ResponseRegister>{
 
             override fun onFailure(call: Call<ResponseRegister>, t: Throwable){
@@ -99,4 +105,6 @@ class PendaftaranAkunActivity : AppCompatActivity() {
 
         })
     }
+
+
 }

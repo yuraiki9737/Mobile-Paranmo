@@ -7,5 +7,5 @@ data class ProductResponse (
     val success : Int,
     val status : Int,
     val message : String,
-    val article : ArrayList<Product>
+    val product : ArrayList<Product>
 )

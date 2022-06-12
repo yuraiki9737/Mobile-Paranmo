@@ -6,14 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".ui.paranshop.ParanShopFragment">
 
+
+
+
     <FrameLayout
         android:id="@+id/frame"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/primary_10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@color/primary_10">
+        app:layout_constraintTop_toTopOf="parent">
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout"
             android:layout_width="match_parent"
@@ -44,7 +48,7 @@
                 android:src="@drawable/ic_round_shopping_bag_24_green"
                 app:layout_constraintEnd_toStartOf="@+id/btn_favorite"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="MissingConstraints"/>
+                tools:ignore="MissingConstraints" />
 
             <ImageView
                 android:id="@+id/btn_favorite"
@@ -77,8 +81,8 @@
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="40dp"
                 android:layout_marginEnd="15dp"
-                app:cardCornerRadius="10dp"
                 android:background="@drawable/border_search"
+                app:cardCornerRadius="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/logo1">
@@ -96,24 +100,24 @@
                         android:id="@+id/view11"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:layout_marginStart="20dp"
+                        android:layout_marginStart="320dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginEnd="15dp"
                         android:layout_marginBottom="10dp"
                         android:background="@drawable/ic_round_search_24"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/textView13"
+                        app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
                         android:id="@+id/textView13"
                         style="@style/text"
-                        android:layout_width="0dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="15dp"
                         android:layout_marginTop="10dp"
-                        android:layout_marginEnd="20dp"
+                        android:layout_marginEnd="15dp"
                         android:layout_marginBottom="10dp"
                         android:text="@string/search_bar"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -139,7 +143,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="250dp"
+        android:layout_marginTop="240dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -148,17 +152,153 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:orientation="vertical"
             tools:ignore="ScrollViewSize">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/paranpay_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="15dp"
+                    app:cardBackgroundColor="@color/primary_10"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/rv_discount"
+                    tools:ignore="MissingConstraints">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/primary_10"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/price"
+                            style="@style/text_price_paranpay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginEnd="15dp"
+                            android:text="@string/price"
+                            android:textAlignment="viewStart"
+                            app:layout_constraintBottom_toBottomOf="@+id/wallet_paranpay"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/wallet_paranpay"
+                            app:lineHeight="18dp" />
+
+                        <View
+                            android:id="@+id/wallet_paranpay"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/ic_outline_account_balance_wallet_24"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/paranpay"
+                            style="@style/text_location"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginBottom="20dp"
+                            android:text="@string/top_up"
+                            android:textAlignment="viewStart"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/price"
+                            app:lineHeight="18dp" />
+
+                        <FrameLayout
+                            android:id="@+id/coin_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="180dp"
+                            android:layout_marginEnd="0dp"
+                            app:cardBackgroundColor="@color/primary_10"
+                            app:cardCornerRadius="10dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/primary_10"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <TextView
+                                    android:id="@+id/coin"
+                                    style="@style/text_price_paranpay"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="40dp"
+                                    android:layout_marginEnd="15dp"
+                                    android:text="@string/price"
+                                    android:textAlignment="viewStart"
+                                    app:layout_constraintBottom_toBottomOf="@+id/coin_paranpay"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="@+id/coin_paranpay"
+                                    app:lineHeight="18dp" />
+
+                                <View
+                                    android:id="@+id/coin_paranpay"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginTop="20dp"
+                                    android:background="@drawable/ic_coin"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/parancoin"
+                                    style="@style/text_location"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginEnd="15dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:text="@string/coin"
+                                    android:textAlignment="viewStart"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@id/coin"
+                                    app:lineHeight="18dp" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </FrameLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rv_discount"
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_height="160dp"
+                    android:layout_marginTop="10dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -172,18 +312,21 @@
                     android:layout_marginTop="20dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/rv_discount"
+                    app:layout_constraintTop_toBottomOf="@id/paranpay_view"
                     tools:listitem="@layout/item_category" />
 
 
                 <TextView
                     android:id="@+id/p_discount"
                     style="@style/text_splashscreen"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="40dp"
+                    android:layout_marginEnd="15dp"
                     android:text="@string/p_discount"
+                    android:textAlignment="viewStart"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/rv_category"
                     app:lineHeight="18dp" />
@@ -207,25 +350,31 @@
                 <TextView
                     android:id="@+id/show_all_discount"
                     style="@style/text_home"
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="40dp"
+                    android:layout_marginStart="15dp"
                     android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="6dp"
                     android:text="@string/show_all"
                     android:textAlignment="viewEnd"
+                    app:layout_constraintBottom_toBottomOf="@+id/p_discount"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/rv_category"
+                    app:layout_constraintStart_toEndOf="@+id/p_discount"
+                    app:layout_constraintTop_toTopOf="@+id/p_discount"
                     app:lineHeight="18dp" />
 
 
                 <TextView
                     android:id="@+id/p_terlaris"
                     style="@style/text_splashscreen"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="30dp"
+                    android:layout_marginEnd="15dp"
                     android:text="@string/p_terlaris"
+                    android:textAlignment="viewStart"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/item_discount"
                     app:lineHeight="18dp" />
@@ -233,33 +382,38 @@
                 <TextView
                     android:id="@+id/show_all_category"
                     style="@style/text_home"
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="15dp"
                     android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="6dp"
                     android:text="@string/show_all"
                     android:textAlignment="viewEnd"
+                    app:layout_constraintBottom_toBottomOf="@+id/p_terlaris"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/item_discount"
+                    app:layout_constraintStart_toEndOf="@+id/p_terlaris"
+                    app:layout_constraintTop_toTopOf="@+id/p_terlaris"
                     app:lineHeight="18dp" />
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rv_product"
                     android:layout_width="match_parent"
-                    android:layout_height="300dp"
+                    android:layout_height="280dp"
                     android:layout_marginTop="20dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/space_bottom"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/p_terlaris"
                     tools:listitem="@layout/item_product" />
 
 
+
                 <Space
+                    android:id="@+id/space_bottom"
                     android:layout_width="match_parent"
-                    android:layout_height="20dp"
+                    android:layout_height="30dp"
                     android:layout_marginTop="20dp"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginBottom="20dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"

@@ -45,9 +45,9 @@
             <TextView
                 android:id="@+id/textView11"
                 style="@style/text_splashscreen"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
+                android:layout_marginStart="50dp"
                 android:layout_marginEnd="15dp"
                 android:text="@string/result_identification_bar"
                 android:textAlignment="viewStart"
@@ -66,12 +66,12 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="15dp"
-        app:cardElevation="3dp"
         android:background="@color/primary_10"
         android:orientation="vertical"
         app:cardCornerRadius="20dp"
+        app:cardElevation="3dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frameLayout"
@@ -472,6 +472,8 @@
         app:layout_constraintVertical_bias="0.928"
         app:maxImageSize="35dp"
         tools:ignore="MissingConstraints,RtlHardcoded" />
+
+
 
 
 

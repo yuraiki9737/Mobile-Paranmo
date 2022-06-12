@@ -3,6 +3,7 @@ package com.navigation.latihan.paranmo.ui.identifikasitanaman.resultidentifikasi
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -17,9 +18,12 @@ import com.navigation.latihan.paranmo.ui.MainActivity
 import org.tensorflow.lite.support.image.TensorImage
 
 
+
+
 class ResultIdentifikasiActivity : AppCompatActivity() {
 
     private lateinit var binding : ActivityResultIdentifikasiBinding
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,8 +33,11 @@ class ResultIdentifikasiActivity : AppCompatActivity() {
 
         bindingButton()
 
-
-
+        binding.cardIdentification.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com/search?q=${binding.plant
+                .text}"))
+            startActivity(intent)
+        }
 
     }
 

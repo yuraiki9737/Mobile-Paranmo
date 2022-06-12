@@ -18,6 +18,7 @@ class CustomViewPassword : TextInputEditText, View.OnTouchListener {
 
     private lateinit var passwordIcon: Drawable
 
+    var type = ""
     constructor(context: Context) : super(context) {
         init()
     }

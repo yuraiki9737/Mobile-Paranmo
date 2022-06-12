@@ -45,11 +45,14 @@
 
             <TextView
                 style="@style/text_splashscreen"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="15dp"
                 android:text="@string/post_bar"
+                android:textAlignment="viewStart"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/back_favorit"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -82,11 +85,11 @@
                 <TextView
                     android:id="@+id/text_add"
                     style="@style/text"
-                    android:layout_width="0dp"
-                    android:layout_marginEnd="15dp"
-                    android:layout_marginStart="15dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
                     android:layout_marginTop="30dp"
+                    android:layout_marginEnd="15dp"
                     android:text="@string/post"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -114,7 +117,7 @@
 
                 <FrameLayout
                     android:id="@+id/button_add"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="20dp"
@@ -135,7 +138,7 @@
                         <androidx.appcompat.widget.AppCompatButton
                             android:id="@+id/buttonCamera"
                             style="@style/text_button_daftar"
-                            android:layout_width="200dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:height="56dp"
                             android:background="@drawable/border_off"
@@ -149,7 +152,7 @@
                         <androidx.appcompat.widget.AppCompatButton
                             android:id="@+id/buttonGallery"
                             style="@style/text_button_daftar"
-                            android:layout_width="200dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:height="56dp"
                             android:background="@drawable/border_off"
@@ -166,7 +169,7 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/namePlantInput"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="20dp"

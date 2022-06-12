@@ -16,6 +16,7 @@ class CustomViewName : TextInputEditText, View.OnTouchListener {
 
     private lateinit var clearText: Drawable
 
+    var type = ""
     constructor(context: Context) : super(context) {
         init()
     }

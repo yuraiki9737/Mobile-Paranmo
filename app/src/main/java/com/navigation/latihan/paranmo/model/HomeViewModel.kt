@@ -4,6 +4,7 @@ import android.util.Log
 import androidx.lifecycle.*
 import com.navigation.latihan.paranmo.api.RetrofitClient
 import com.navigation.latihan.paranmo.data.Article
+import com.navigation.latihan.paranmo.data.LoginUser
 import com.navigation.latihan.paranmo.data.response.ArticleResponse
 import com.navigation.latihan.paranmo.data.response.LoginAccount
 import com.navigation.latihan.paranmo.data.storage.PreferenceAkunParanmo
@@ -41,6 +42,7 @@ class HomeViewModel (private val preferenceAkunParanmo: PreferenceAkunParanmo): 
     fun getArticle(): MutableLiveData<ArrayList<Article>?>{
         return articleList
     }
+
     fun getUserParanmo(): LiveData<LoginAccount>{
         return preferenceAkunParanmo.getAkunParanmo().asLiveData()
     }
@@ -50,4 +52,6 @@ class HomeViewModel (private val preferenceAkunParanmo: PreferenceAkunParanmo): 
             preferenceAkunParanmo.logoutAccountParanmo()
         }
     }
+
+
 }

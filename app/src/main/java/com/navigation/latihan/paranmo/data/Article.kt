@@ -10,6 +10,8 @@ data class Article (
     val name : String,
     val plant_name : String,
     val latin_name : String,
+    val benefit : String,
+    val how_to_use : String,
     val description : String,
     val photo_url : String,
     val createdAt: String
