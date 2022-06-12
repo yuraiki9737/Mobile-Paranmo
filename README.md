@@ -44,6 +44,6 @@ Link: [Paranmo Usability Testing Problem Classification](https://docs.google.com
 ## Developing and Integrating
 In this step, we develop the application by integrating all of the technology aspects (Mobile Development, Machine Learning, and Cloud Computing). This application is still in the beta version. Futher development for some features will soon be launched.
 
-## Apps Paranmo
+## Paranmo Apps
 
 **![Paranmo](https://drive.google.com/file/d/1saZnWjueGCGVTRijD9ISpRuR0s61-pNu/view?usp=sharing)**
